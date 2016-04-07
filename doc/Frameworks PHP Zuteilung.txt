@@ -1,0 +1,11 @@
+August:
+	Yii 2, Zend Framework 2
+Jan:
+	Laravel 4, Symfony 2
+Philipp:
+	Nette
+Christian: 
+	Codigniter ODER PHPixie
+
+Kriterien:
+http://www.thewebhatesme.com/allgemein/10-auswahlkriterien-fur-php-frameworks/

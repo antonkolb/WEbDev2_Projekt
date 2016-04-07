@@ -1,0 +1,3 @@
+Offizielles Repo: Hof Gitlab
+Arbeitsrepo: Github.com
+Agile-Tool: Zenhub.io (Alternative: ScrumDesk)
