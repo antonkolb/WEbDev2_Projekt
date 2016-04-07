@@ -1,0 +1,3 @@
+http://zenofcoding.com/2015/11/16/the-great-php-mvc-framework-showdown-of-2016-cakephp-3-vs-symfony-2-vs-laravel-5-vs-zend-2/
+
+https://www.quora.com/Which-should-I-learn-next-Symfony-2-or-Laravel
