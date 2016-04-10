@@ -1,3 +1,53 @@
 http://zenofcoding.com/2015/11/16/the-great-php-mvc-framework-showdown-of-2016-cakephp-3-vs-symfony-2-vs-laravel-5-vs-zend-2/
 
 https://www.quora.com/Which-should-I-learn-next-Symfony-2-or-Laravel
+
+
+Allgemein:
++
+Relativ junges (2011), leicht zu verstehndes Rapid Development Framwork basierend auf Komponenten aus Symphony. Relativ offen fuer Erweiterungen. Sehr Unit-Test freundlich.
+-
+Bietet etwas wenig Struktur für sehr komplexe Projekte.
+
+----------------------
+Aktualitaet: 5/5
+Seit Anfang 2012 regelmäßig neue öffentliche Releases (ca. 2 pro Monat), aktuelle Commits auf GitHub.
+
+----------------------
+Verbreitung: 3/5
+Nicht sehr verbreitet in großen Firmen, eher beliebt & eingesetzt in mittelständischen kleineren Betrieben. Im Juni 2015 erster Release einer LTS Version (=> sehr jung).
+
+----------------------
+Dokumentation: 4/5
+Schriftliche Dokumentation von Installation/Einrichtung über die Architektur des Frameworks bis hin zum Einsatz der vorhandenen Features. Zusätzlich kostenpflichtiges Angebot von professionellen Videotutorial-Serien.
+
+----------------------
+Qualitätssicherung: aktueller Stand (5.1) unbekannt
+
+----------------------
+Entwickler:
+Projekt wurde von einzelnem Entwickler zum Laufen gebracht (Taylor Otwell), aktuell werden hauptsächlich pull requests von anderen Entwicklern eingepflegt.
+
+----------------------
+Community: 4/5
+Stackoverflow: 35k Fragen tagged 'laravel', 6k Fragen tagged 'laravel 5'
+Youtube: 46k Hits für 'Laravel Tutorial'
+----------------------
+Lizenz: MIT (frei)
+
+----------------------
+Technik: 4/5
+PHP 5 wird unterstützt. Für den Funktionsumfang relativ einfache/schnelle Konfiguration
+
+----------------------
+Bugs:
+18 offen, 155  gelöst, sehr viele geschlossene pull requests (>6k)
+
+----------------------
+Features: 4/5
+Externe Features lassen sich halbwegs frei integrieren.
+Gutes relativ simples ORM. Templates, Unit Tests, Validation, Controllers, Errors & Logging, Authentication, IoC, Mail, Packages, Session, SSH, Localization, Facades, Cache, Billing
+
+----------------------
+Aufwand: 4/5
+Manchmal auch für Einsteiger empfohlen für größere/langfristigere Projekte, als relativ simpel/eingängig wahrgenommen.
