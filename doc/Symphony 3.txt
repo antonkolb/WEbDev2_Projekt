@@ -1,0 +1,20 @@
+"Handbuch": http://symfony.com/doc/current/book/index.html
+http://symfony.com/pdf/Symfony_book_3.0.pdf?v=4
+
+Allgemein:
++
+Bodenständiges (robustes), sehr modulares Framework, aufgrund des Aufbaus aus Komponenten sehr ausführlich anpassbar / erweiterbar.
+-
+Nicht simpel, nicht unbedingt geeignet für schnelle Einarbeitung / Rapid Development.
+----------------------
+
+----------------------
+Lizenz
+frei: CC (Attribution, Share-Alike, 3.0 Unported)
+
+----------------------
+Technik
+Unterstützt PHP5
+http://symfony.com/blog/symfony-3-0-the-roadmap
+
+----------------------
