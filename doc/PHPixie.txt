@@ -1,0 +1,34 @@
+Pixie
+Verbreitetes Framework mit 80200 Treffern bei Google mit dem Suchwort "php pixie framework"
+Pinie wurde Anfang 2012 von Kohana zum schnellen einmaligen Laden von Webseiten gegründet.
+Dieses Framework ist mit einer BSD Lizenz versehen.
+
+Vorteile:
+Dieses Framework konzentriert sich auf eine schnelle Geschwindigkeit und geringe Ladezeit, dabei steht eine modulare und flexible Architektur im Vordergrund. 
+Phpixie ist einfach zu erlernen und sofort für Entwickler verständlich.
+Einfache Architektur und geringe Größe ermöglichen schnelle Leistung.
+
+Nachteile:
+Klassen erhalten Zugriff auf ein Objekt das viel mehr kann als von der Klasse gefordert wird.
+Kein Full-Stack-Framework
+Klassen benötigen zwingend eine Namenskonvention
+Feste Namensvergabe
+
+http://www.phpbuilder.com/articles/news-reviews/miscellaneous/phpixie-lightweight-php-mvc-framework.html
+
+Die Version 1.25 PHPixie erfordert PHP 5.3
+
+Dieses Framework wird am beliebtesten in der Ukraine mit 263 Votes bewertet.
+(http://www.sitepoint.com/best-php-framework-2015-sitepoint-survey-results/)
+
+Das PHP Framework Popularität in Personal Projekts -SitePoint 2015 in den oberen Plätzen dabei.
+Funktionen:
+Routing-System mit Pfadverfolgung
+Caching
+Objekt-relationales Mapping (ORM)
+HTML Markup
+Benutzereingaben Validierung
+Authendifizierung und Autorisierung
+
+Framework ist leicht zu lernen, es gibt eine Schnellanleitung für den Schnelleinstieg, als auch 30 Minuten Tutorials mit Screenshirts und Codebeispiele und ausführlicher Beschreibung.
+(http://phpixie.jeromepasquier.com/)
