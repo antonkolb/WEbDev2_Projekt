@@ -11,7 +11,7 @@ Bietet etwas wenig Struktur für sehr komplexe Projekte.
 
 ----------------------
 Aktualitaet: 5/5
-Seit Anfang 2012 regelmäßig neue öffentliche Releases (ca. 2 pro Monat), aktuelle Commits auf GitHub.
+Seit Anfang 2012 regelmäßig neue öffentliche Releases (aktuell ca. 2 pro Monat), aktuelle Commits auf GitHub.
 
 ----------------------
 Verbreitung: 3/5
@@ -41,12 +41,12 @@ PHP 5 wird unterstützt. Für den Funktionsumfang relativ einfache/schnelle Konfig
 
 ----------------------
 Bugs:
-18 offen, 155  gelöst, sehr viele geschlossene pull requests (>6k)
+18 offen, 155 closed, sehr viele geschlossene pull requests (>6k)
 
 ----------------------
 Features: 4/5
 Externe Features lassen sich halbwegs frei integrieren.
-Gutes relativ simples ORM. Templates, Unit Tests, Validation, Controllers, Errors & Logging, Authentication, IoC, Mail, Packages, Session, SSH, Localization, Facades, Cache, Billing
+Gutes relativ simples ORM. Templates, Unit Tests, Validation, Controllers, Errors & Logging, Authentication, DI/IoC, Mail, Packages, Session, SSH, Localization, Facades, Cache, Billing
 
 ----------------------
 Aufwand: 4/5

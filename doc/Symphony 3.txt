@@ -1,20 +1,61 @@
 "Handbuch": http://symfony.com/doc/current/book/index.html
 http://symfony.com/pdf/Symfony_book_3.0.pdf?v=4
 
+http://zenofcoding.com/2015/11/16/the-great-php-mvc-framework-showdown-of-2016-cakephp-3-vs-symfony-2-vs-laravel-5-vs-zend-2/
+https://github.com/symfony/symfony
+http://zenofcoding.com/2015/11/16/the-great-php-mvc-framework-showdown-of-2016-cakephp-3-vs-symfony-2-vs-laravel-5-vs-zend-2/
+
 Allgemein:
 +
-Bodenständiges (robustes), sehr modulares Framework, aufgrund des Aufbaus aus Komponenten sehr ausführlich anpassbar / erweiterbar.
+Stabiles & robustes, sehr modulares/flexibles Framework, aufgrund des Aufbaus aus Komponenten sehr ausführlich anpassbar / erweiterbar.
 -
 Nicht simpel, nicht unbedingt geeignet für schnelle Einarbeitung / Rapid Development.
-----------------------
+
 
 ----------------------
-Lizenz
+Aktualität: 5/5
+Seit 2011 regelmäßig neue Releases (aktuell ca. 3 pro Monat), aktuelle Commits auf Github
+
+----------------------
+Verbreitung: 4/5
+Eingesetzt ein einigen größeren Projekten (Drupal, Spotify, BlaBlaCar, YouPorn)
+http://stfalcon.com/en/blog/post/largest-websites-built-on-symfony2
+
+----------------------
+Dokumentation: 4/5
+Ausführliche Dokumentation, kostenlose Tutorial-Sammluing ('The Symfony Cookbook')
+http://symfony.com/doc/current/cookbook/index.html
+
+----------------------
+Qualitätssicherung: aktueller Stand (3.0) unbekannt
+
+----------------------
+Entwickler:
+Einzelne Person hauptverantwortlich (Fabien Potencier), gesponsort von SensioLabs, aktuell werden hauptsächlich pull requests von anderen Entwicklern eingepflegt.
+
+----------------------
+Community: 3/5
+Stackoverflow: 40k Fragen tagged 'symphony'/'symphony2', 0.5k Fragen tagged 'symfony3'
+Youtube: 14k Hits für 'Symfony Tutorial'
+
+----------------------
+Lizenz:
 frei: CC (Attribution, Share-Alike, 3.0 Unported)
 
 ----------------------
-Technik
+Technik:
 Unterstützt PHP5
 http://symfony.com/blog/symfony-3-0-the-roadmap
 
 ----------------------
+Bugs:
+168 offen, 567 closed, sehr viele geschlossene pull requests (>11k)
+
+----------------------
+Features: 5/5
+Alle Komponenten lassen sich austauschen, Auswahl aus verschiedenen ORMs, externe Features lassen sich je nach verwendeten Komponenten integrieren.
+ORM(external), Templates, Unit Tests(external), Validation, Controller, Authentication, DI/IoC, 
+Mail, Packages, Session, Localization, Cache
+----------------------
+Aufwand: 3/5
+Nicht unbedingt für simple Projekte empfohlen, da einiges an Einarbeitungszeit nötig ist.
