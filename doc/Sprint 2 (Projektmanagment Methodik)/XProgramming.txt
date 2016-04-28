@@ -1,0 +1,119 @@
+Extreme Programming
+Ein bekannter agiler Softwareprozess ist Extrem Progamming. Dabei werden die sich während der Entwicklung ändernden Kundenwünsche Sets berücksichtigt. Der Softwareprozess wird immer wieder in kurzen Zyklen durchlaufen. Nur die im Iterationsschritt festgelegten Anforderungen werden implementiert. Diese Methode beruht auf der Erfahrung, das der Kunde alle vollständigen Anforderungen seiner Software zu Projektbeginn noch nicht genau kennt. 
+
+Kosten
+Durch das Mitwachsen der Anforderungen verläuft die Kostenkurve gleichmäßig linear.
+
+Vorteile
+- schnelle Entwicklung der Software (eine funktionierende Software)
+- nur eingesetzte Funktionen werden entwickelt
+- Softwareentwicklung lässt sich mit den Kunden vereinbaren, und bietet schnelle bewertbare Ergebnisse
+- mehr Kommunikation im Projekt durch die kürzeren Zyklen
+- Kunde wird stärker beim Entwicklungsprozess mit eingebunden, und hat dadurch ein besseres Verständniss
+- Kosten bleiben bei großen Software-Projekten verhältnismäßig gering
+- Höhere Qualität, Erweiterbarkeit und Nachhaltigkeit bei der Entwicklung
+- XP hat eine positive Auswirkung auf dem Teamgeist und der Motivation der Entwickler so wie ein Erfolgserlebnis bei der Auslieferung einer neuen Version
+
+Nachteile
+- schlecht bei Kleinen Softwareprojekten 
+- schwierig das nur bei Beginn definierte Anforderungen mit dem geringsten Aufwand umgesetzt werden können
+- hohe Anforderung an die Entwickler, da die Software im jeden Zustand erweiterbar sein sollte
+- Kunde hat nicht ausreichend Zeit, um sich regelmäßig mit den Entwicklern zu treffen
+- die Test-Entwicklung kann schnell zum Endprodukt werden bzw. ausgelassen werden
+- der Kunde muss Vertäuen in den Programmiere haben
+
+Projektphase
+- Sekundentakt: Durch Pair-Programming wird die gegenseitige Kontrolle erhöht, und Fehler vermieden 
+- Minutentakt: UNIT-Tests werden vor dem Code geschrieben, so das der Code ständig überprüft wird
+- Stundentakt: Entwickelte Komponenten werden sofort im Gesamtsystem integriert, und somit Fehler schneller gefunden.
+- Tagestakt: tägliches Treffen des Entwicklungsteams um den Projektfortschritt zu reflektieren, und Fehlentwicklungen zu vermeiden.
+- Wochentakt: Wöchentlicher Kundenkontakt, um die aktuell auffähige Version auszuliefern, und um neue Änderungen zu besprechen.
+- Monatstakt: dem Kunden wird regelmäßig eine neue Release ausgeliefert.
+
+
+
+Hauptpraktiken
+10 Minuten Build
+Räumlich zusammen sitzend 
+Energievolle Arbeit
+Stories
+Pair-Programming
+Entspanntes Areiten
+Kontinuierliche Integration
+Test First Programming
+Informativer Arbeitsplatz
+Quartalsweiser Zyklus
+Team
+Inkrementelles Design 
+Wöchentlicher Zyklus
+
+Praktiken
+Pair-Programming
+Kollektives Eignetum
+Permanente Integration
+Testgetriebene Entwickung
+Kundeneinbeziehung
+Refactoring
+Keine Überstunden
+Iterationen
+Methaper
+Coding-Standarts
+einfaches Design
+einhalten von Codingstandarts
+
+
+Technicken
+- Planungsspiel
+- Kleine Releases
+- Systemmetapher
+- Einfaches Design
+- Pair-Programming
+- Refactoring
+- Ständiges Testen
+- Collective Code-Ownership
+- Vor-Ort-Kunde
+- Programmierrichtlinien
+- 40 Stunden Woche
+- Ständige Integration
+
+Rollen
+- Kunde (entscheidet was er haben will, und wie es getestet werden soll)
+- Entwickler (schätzt Aufwand und Komplexität, steuert die Geschwindigkeit)
+- Manager (bringt Kunde und Entwickler zusammen)
+
+
+
+
+
+
+
+
+
+Die Eigenverantwortung liegt von der Funktionalität beim Kunden, und die Zuverlässigkeit
+
+Durch die funktionale Erweiterung ist die Erfolgs Wahrscheinlichkeit Seher hoch.
+
+Durch den engen Kundenkontakt sind Änderungen sehr leicht möglich, und dadurch ist man sehr flexiebel.
+
+Besser für größere Projekte geeignet
+Mehrprojektumgebung
+
+
+
+
+
+
+
+
+
+
+
+
+Quellen:
+https://blog.seibert-media.net/blog/2005/05/01/extreme-programming-vorgehensmodell-zur-software-entwicklung-bei-seibertmedia/
+
+https://www.it-agile.de/wissen/methoden/extreme-programming/
+
+http://www.computerwoche.de/a/extreme-programming,2352505,2
+http://www.computerwoche.de/a/extreme-programming,2352505,3
+
