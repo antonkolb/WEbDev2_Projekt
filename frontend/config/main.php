@@ -28,14 +28,19 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+        //de-commented
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [
-            ],
+           // 'rules' => [
+           // ], //commented
         ],
-        */
+        //de-commented
+	'request' => [
+	// secret key required by cookie validation
+		'cookieValidationKey' => 'x0XXz0PTdftJl5K1Qv3hGRmj2',
+	],
+	'db' => require(__DIR__.'/db.php'),
     ],
     'params' => $params,
 ];
