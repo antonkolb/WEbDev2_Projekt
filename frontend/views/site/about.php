@@ -8,9 +8,12 @@ $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1>Made by Team-17</h1>
 
-    <p>This is the About page. You may modify the following file to customize its content:</p>
+    <p>Team-17 are:</br>Anton <strong>"AK91"</strong> Kolb</br>
+			Christian <strong>"Poehc"</strong> P&ouml;lmann</br>
+			Jan <strong>"JM"</strong> Mothes</br>
+			Philipp <strong>"marekele"</strong> Marek</p>
 
-    <code><?= __FILE__ ?></code>
+   <!-- <code><?= __FILE__ ?></code>-->
 </div>

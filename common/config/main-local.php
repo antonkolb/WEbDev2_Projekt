@@ -14,7 +14,12 @@ return [
             // send all mails to a file by default. You have to set
             // 'useFileTransport' to false and configure a transport
             // for the mailer to send real emails.
-            'useFileTransport' => true,
+            'useFileTransport' => false, //von true zu false gesetzt
+	    //akolb's Code, siehe Yii2-2-S10
+	    'transport' => [
+		'class' => 'Swift_SmtpTransport',
+		'constructArgs' => ['localhost', 25]
+	    ]
         ],
     ],
 ];
