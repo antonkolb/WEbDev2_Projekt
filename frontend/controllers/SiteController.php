@@ -18,6 +18,19 @@ use frontend\models\ContactForm;
  */
 class SiteController extends Controller
 {
+
+
+//===========================================================================================
+// my functions
+
+	public function actionShowdate(){
+		return date('d.m.Y');
+	}
+
+//===========================================================================================
+
+
+
     /**
      * @inheritdoc
      */
