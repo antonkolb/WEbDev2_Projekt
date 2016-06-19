@@ -8,5 +8,5 @@ class_name: AcceptanceTester
 modules:
     enabled:
         - PhpBrowser:
-            url: http://localhost/myapp
+            url: 'http://wd2-team-17.lx-lehre.hof-university.de/'
         - \Helper\Acceptance
