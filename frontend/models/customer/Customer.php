@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models\customer;
+namespace frontend\models\customer;
 
 class Customer {
 

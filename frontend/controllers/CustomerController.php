@@ -1,10 +1,10 @@
 <?php
-namespace app\controllers;
+namespace frontend\controllers;
 use Yii;
-use app\models\customer\Customer;
-use app\models\customer\CustomerRecord;
-use app\models\customer\Phone;
-use app\models\customer\PhoneRecord;
+use frontend\models\customer\Customer;
+use frontend\models\customer\CustomerRecord;
+use frontend\models\customer\Phone;
+use frontend\models\customer\PhoneRecord;
 use \yii\data\ArrayDataProvider;
 use \yii\web\Controller;
 
