@@ -28,7 +28,17 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+//eigener code Yii2-3-S51       
+	'urlManager' => [
+		'enablePrettyUrl' => true,
+		'showScriptName' => false
+	],
+	'request' => [
+		// secret key required by cookie validation
+		'cookieValidationKey' => 'e1oUK3BKXKtCe9S-gd0gFBctFhBKXYAM',
+	],
+	'db' => require(__DIR__.'/db.php'),
+	/*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
