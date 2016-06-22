@@ -4,7 +4,7 @@
 //Yii2-3-S43
 use yii\db\Migration;
 
-class m160614_070910_init_phone_table extends Migration
+class m160622_104550_init_phone_table extends Migration
 {
     public function up()
     {

@@ -2,7 +2,7 @@
 
 use yii\db\Migration;
 
-class m160620_133457_init_customer_table extends Migration
+class m160622_104026_init_customer_table extends Migration
 {
     public function up()
     {//eigener Code, siehe Yii2-3-S41
