@@ -36,3 +36,5 @@ tests/_output/*
 
 #Testordner
 TestCRM
+frontend/runtime/*
+frontend/web/assets/*

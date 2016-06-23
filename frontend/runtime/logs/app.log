@@ -8851,3 +8851,1102 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1466680947.645
     'REQUEST_TIME' => 1466680947
 ]
+2016-06-23 11:36:17 [10.10.60.66][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.60.66
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:88
+2016-06-23 11:36:17 [10.10.60.66][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '415h6evqkohsr9u45jr2r06574'
+    '_csrf' => '8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1NMHH3Lhxh49VxkmBBDK-3zeed44fhVn\";}'
+    '_identity' => 'b0b0a2eda9d48ca970b8678e95ffd78557383ae40bae7482cb00d3f222b78379a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"z4HLiLguy59oWmTTKMWzdW3rb5ljQiy8\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/TestCRM/frontend/web/site/signup'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=415h6evqkohsr9u45jr2r06574; _csrf=8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221NMHH3Lhxh49VxkmBBDK-3zeed44fhVn%22%3B%7D; _identity=b0b0a2eda9d48ca970b8678e95ffd78557383ae40bae7482cb00d3f222b78379a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22z4HLiLguy59oWmTTKMWzdW3rb5ljQiy8%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.60.66'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '57686'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681777.456
+    'REQUEST_TIME' => 1466681777
+]
+2016-06-23 11:36:18 [10.10.60.66][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.60.66
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:88
+2016-06-23 11:36:18 [10.10.60.66][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '8pu2g2vhta4h7hd3o7tbvhcoi5'
+    '_csrf' => '8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1NMHH3Lhxh49VxkmBBDK-3zeed44fhVn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=8pu2g2vhta4h7hd3o7tbvhcoi5; _csrf=8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221NMHH3Lhxh49VxkmBBDK-3zeed44fhVn%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.60.66'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '57686'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681778.873
+    'REQUEST_TIME' => 1466681778
+]
+2016-06-23 11:36:20 [10.10.60.66][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.60.66
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:108
+2016-06-23 11:36:20 [10.10.60.66][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '8pu2g2vhta4h7hd3o7tbvhcoi5'
+    '_csrf' => '8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1NMHH3Lhxh49VxkmBBDK-3zeed44fhVn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=8pu2g2vhta4h7hd3o7tbvhcoi5; _csrf=8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221NMHH3Lhxh49VxkmBBDK-3zeed44fhVn%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.60.66'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '57686'
+    'REDIRECT_URL' => '/frontend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/site/login'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681780.589
+    'REQUEST_TIME' => 1466681780
+]
+2016-06-23 11:36:28 [10.10.60.66][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.60.66
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:108
+2016-06-23 11:36:27 [10.10.60.66][-][-][info][application] $_POST = [
+    '_csrf' => 'eV90SkpwTTBIETkCAkMBWAE3QHMcCCZdOx0wAWdDN1UcO0B.LBgbXg=='
+    'LoginForm' => [
+        'username' => 'akraft'
+        'password' => '888888888'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8pu2g2vhta4h7hd3o7tbvhcoi5'
+    '_csrf' => '8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1NMHH3Lhxh49VxkmBBDK-3zeed44fhVn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=8pu2g2vhta4h7hd3o7tbvhcoi5; _csrf=8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221NMHH3Lhxh49VxkmBBDK-3zeed44fhVn%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '201'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.60.66'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '57695'
+    'REDIRECT_URL' => '/frontend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/site/login'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681787.642
+    'REQUEST_TIME' => 1466681787
+]
+2016-06-23 11:36:35 [10.10.60.66][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.60.66
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:108
+2016-06-23 11:36:35 [10.10.60.66][-][-][info][application] $_POST = [
+    '_csrf' => 'd1hkZjN6VjBGFikue0kaWA8wUF9lAj1dNRogLR5JLFUSPFBSVRIAXg=='
+    'LoginForm' => [
+        'username' => 'akraft'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8pu2g2vhta4h7hd3o7tbvhcoi5'
+    '_csrf' => '8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1NMHH3Lhxh49VxkmBBDK-3zeed44fhVn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=8pu2g2vhta4h7hd3o7tbvhcoi5; _csrf=8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221NMHH3Lhxh49VxkmBBDK-3zeed44fhVn%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '198'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.60.66'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '57698'
+    'REDIRECT_URL' => '/frontend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/site/login'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681795.099
+    'REQUEST_TIME' => 1466681795
+]
+2016-06-23 11:36:42 [10.10.60.66][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.60.66
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:88
+2016-06-23 11:36:42 [10.10.60.66][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'pmmkiv4gvdafm2p9ijict6j4c7'
+    '_csrf' => '8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1NMHH3Lhxh49VxkmBBDK-3zeed44fhVn\";}'
+    '_identity' => 'b0b0a2eda9d48ca970b8678e95ffd78557383ae40bae7482cb00d3f222b78379a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"z4HLiLguy59oWmTTKMWzdW3rb5ljQiy8\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=pmmkiv4gvdafm2p9ijict6j4c7; _csrf=8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221NMHH3Lhxh49VxkmBBDK-3zeed44fhVn%22%3B%7D; _identity=b0b0a2eda9d48ca970b8678e95ffd78557383ae40bae7482cb00d3f222b78379a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22z4HLiLguy59oWmTTKMWzdW3rb5ljQiy8%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.60.66'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '57701'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681802.099
+    'REQUEST_TIME' => 1466681802
+]
+2016-06-23 11:37:11 [10.10.60.66][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.60.66
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:88
+2016-06-23 11:37:11 [10.10.60.66][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '0j8vi0jl7e80710oug26dfd4r5'
+    '_csrf' => '8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1NMHH3Lhxh49VxkmBBDK-3zeed44fhVn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=0j8vi0jl7e80710oug26dfd4r5; _csrf=8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221NMHH3Lhxh49VxkmBBDK-3zeed44fhVn%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.60.66'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '57705'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681831.95
+    'REQUEST_TIME' => 1466681831
+]
+2016-06-23 11:37:14 [10.10.60.66][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.60.66
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:108
+2016-06-23 11:37:14 [10.10.60.66][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '0j8vi0jl7e80710oug26dfd4r5'
+    '_csrf' => '8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1NMHH3Lhxh49VxkmBBDK-3zeed44fhVn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=0j8vi0jl7e80710oug26dfd4r5; _csrf=8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221NMHH3Lhxh49VxkmBBDK-3zeed44fhVn%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.60.66'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '57705'
+    'REDIRECT_URL' => '/frontend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/site/login'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681834.193
+    'REQUEST_TIME' => 1466681834
+]
+2016-06-23 11:37:25 [10.10.60.66][3][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.60.66
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:88
+2016-06-23 11:37:25 [10.10.60.66][3][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f12k1f4cl674rtk93b8s0gjkj2'
+    '_csrf' => '8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1NMHH3Lhxh49VxkmBBDK-3zeed44fhVn\";}'
+    '_identity' => 'bfd5fa315a8eeb76154f8656955752e3ea1135c4b69cc72eca9bfaef4df3e28ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"zavwEO1NQffyXbOwr9TTSDtdIeNw-iSB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=f12k1f4cl674rtk93b8s0gjkj2; _csrf=8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221NMHH3Lhxh49VxkmBBDK-3zeed44fhVn%22%3B%7D; _identity=bfd5fa315a8eeb76154f8656955752e3ea1135c4b69cc72eca9bfaef4df3e28ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22zavwEO1NQffyXbOwr9TTSDtdIeNw-iSB%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.60.66'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '57709'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681845.893
+    'REQUEST_TIME' => 1466681845
+]
+2016-06-23 11:38:04 [192.168.191.127][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.191.127
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:88
+2016-06-23 11:38:04 [192.168.191.127][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.191.127'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '49297'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681884.78
+    'REQUEST_TIME' => 1466681884
+]
+2016-06-23 11:38:06 [192.168.191.127][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.191.127
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:108
+2016-06-23 11:38:06 [192.168.191.127][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-\";}'
+    'PHPSESSID' => '8qb994664fjc5qil0dllnklgq4'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-%22%3B%7D; PHPSESSID=8qb994664fjc5qil0dllnklgq4'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.191.127'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '49297'
+    'REDIRECT_URL' => '/frontend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/site/login'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681886.95
+    'REQUEST_TIME' => 1466681886
+]
+2016-06-23 11:38:15 [192.168.191.127][3][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.191.127
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:88
+2016-06-23 11:38:15 [192.168.191.127][3][-][info][application] $_COOKIE = [
+    '_identity' => 'bfd5fa315a8eeb76154f8656955752e3ea1135c4b69cc72eca9bfaef4df3e28ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"zavwEO1NQffyXbOwr9TTSDtdIeNw-iSB\",2592000]\";}'
+    'PHPSESSID' => 'l6ftt4f8kpct0n39mrnhse3u64'
+    '_csrf' => 'ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_ORIGIN' => 'http://wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/site/login'
+    'HTTP_COOKIE' => '_identity=bfd5fa315a8eeb76154f8656955752e3ea1135c4b69cc72eca9bfaef4df3e28ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22zavwEO1NQffyXbOwr9TTSDtdIeNw-iSB%22%2C2592000%5D%22%3B%7D; PHPSESSID=l6ftt4f8kpct0n39mrnhse3u64; _csrf=ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.191.127'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '49298'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681895.152
+    'REQUEST_TIME' => 1466681895
+]
+2016-06-23 11:38:36 [10.10.60.66][3][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.60.66
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:88
+2016-06-23 11:38:36 [10.10.60.66][3][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f12k1f4cl674rtk93b8s0gjkj2'
+    '_csrf' => '8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1NMHH3Lhxh49VxkmBBDK-3zeed44fhVn\";}'
+    '_identity' => 'bfd5fa315a8eeb76154f8656955752e3ea1135c4b69cc72eca9bfaef4df3e28ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"zavwEO1NQffyXbOwr9TTSDtdIeNw-iSB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=f12k1f4cl674rtk93b8s0gjkj2; _csrf=8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221NMHH3Lhxh49VxkmBBDK-3zeed44fhVn%22%3B%7D; _identity=bfd5fa315a8eeb76154f8656955752e3ea1135c4b69cc72eca9bfaef4df3e28ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22zavwEO1NQffyXbOwr9TTSDtdIeNw-iSB%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.60.66'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '57722'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681916.548
+    'REQUEST_TIME' => 1466681916
+]
+2016-06-23 11:39:11 [192.168.191.127][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.191.127
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:88
+2016-06-23 11:39:11 [192.168.191.127][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ck7oh06i1f47m88u981ltpmoa4'
+    '_csrf' => 'ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_ORIGIN' => 'http://wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=ck7oh06i1f47m88u981ltpmoa4; _csrf=ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.191.127'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '49299'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681951.931
+    'REQUEST_TIME' => 1466681951
+]
+2016-06-23 11:39:13 [192.168.191.127][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.191.127
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:108
+2016-06-23 11:39:12 [192.168.191.127][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ck7oh06i1f47m88u981ltpmoa4'
+    '_csrf' => 'ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/frontend/web/site/signup'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=ck7oh06i1f47m88u981ltpmoa4; _csrf=ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.191.127'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '49299'
+    'REDIRECT_URL' => '/frontend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/site/login'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681952.99
+    'REQUEST_TIME' => 1466681952
+]
+2016-06-23 11:39:17 [10.10.60.66][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.60.66
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:88
+2016-06-23 11:39:17 [10.10.60.66][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '53tip6en5a8v6ubb6g5s0joqp3'
+    '_csrf' => '8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1NMHH3Lhxh49VxkmBBDK-3zeed44fhVn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/TestCRM/frontend/web/site/signup'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=53tip6en5a8v6ubb6g5s0joqp3; _csrf=8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221NMHH3Lhxh49VxkmBBDK-3zeed44fhVn%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.60.66'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '57738'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681957.043
+    'REQUEST_TIME' => 1466681957
+]
+2016-06-23 11:39:19 [10.10.60.66][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.60.66
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:108
+2016-06-23 11:39:19 [10.10.60.66][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '53tip6en5a8v6ubb6g5s0joqp3'
+    '_csrf' => '8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1NMHH3Lhxh49VxkmBBDK-3zeed44fhVn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/frontend/web/site/signup'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=53tip6en5a8v6ubb6g5s0joqp3; _csrf=8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221NMHH3Lhxh49VxkmBBDK-3zeed44fhVn%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.60.66'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '57738'
+    'REDIRECT_URL' => '/frontend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/site/login'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681959.867
+    'REQUEST_TIME' => 1466681959
+]
+2016-06-23 11:39:23 [10.10.60.66][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.60.66
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:108
+2016-06-23 11:39:23 [10.10.60.66][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '53tip6en5a8v6ubb6g5s0joqp3'
+    '_csrf' => '8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1NMHH3Lhxh49VxkmBBDK-3zeed44fhVn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/frontend/web/site/signup'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=53tip6en5a8v6ubb6g5s0joqp3; _csrf=8807709b1af48a6542cd20363c2f143bed214c59b24cad47e4bcbec64deca3bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221NMHH3Lhxh49VxkmBBDK-3zeed44fhVn%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.60.66'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '57738'
+    'REDIRECT_URL' => '/frontend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/site/login'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681963.321
+    'REQUEST_TIME' => 1466681963
+]
+2016-06-23 11:39:32 [192.168.191.127][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.191.127
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:108
+2016-06-23 11:39:32 [192.168.191.127][-][-][info][application] $_POST = [
+    '_csrf' => 'b3Zsd2lIYWMgBCA9ODkuNgsaOQAwJgwrVjMGFFw5UQgKMDQ.Cg4HTg=='
+    'LoginForm' => [
+        'username' => 'jhyme'
+        'password' => 'nosql'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ck7oh06i1f47m88u981ltpmoa4'
+    '_csrf' => 'ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/frontend/web/site/signup'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_ORIGIN' => 'http://wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/site/login'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=ck7oh06i1f47m88u981ltpmoa4; _csrf=ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-%22%3B%7D'
+    'CONTENT_LENGTH' => '196'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.191.127'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '49300'
+    'REDIRECT_URL' => '/frontend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/site/login'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681972.356
+    'REQUEST_TIME' => 1466681972
+]
+2016-06-23 11:39:38 [192.168.191.127][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.191.127
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:108
+2016-06-23 11:39:38 [192.168.191.127][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ck7oh06i1f47m88u981ltpmoa4'
+    '_csrf' => 'ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/frontend/web/site/signup'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=ck7oh06i1f47m88u981ltpmoa4; _csrf=ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.191.127'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '49301'
+    'REDIRECT_URL' => '/frontend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/site/login'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681978.063
+    'REQUEST_TIME' => 1466681978
+]
+2016-06-23 11:39:47 [192.168.191.127][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.191.127
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/SiteController.php:108
+2016-06-23 11:39:47 [192.168.191.127][-][-][info][application] $_POST = [
+    '_csrf' => 'WFBSb2VIMjMXIh4lNDl9Zjw8Bxg8Jl97YRU4DFA5Alg9FgomBg5UHg=='
+    'LoginForm' => [
+        'username' => 'jhyme'
+        'password' => 'nosql'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ck7oh06i1f47m88u981ltpmoa4'
+    '_csrf' => 'ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/frontend/web/site/signup'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_ORIGIN' => 'http://wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://wd2-team-17.lx-lehre.hof-university.de/frontend/web/site/login'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=ck7oh06i1f47m88u981ltpmoa4; _csrf=ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-%22%3B%7D'
+    'CONTENT_LENGTH' => '196'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.191.127'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '49302'
+    'REDIRECT_URL' => '/frontend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/site/login'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681987.28
+    'REQUEST_TIME' => 1466681987
+]
+2016-06-23 11:40:40 [192.168.191.127][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.191.127
+    in /var/vhosts/wd2-team-17/frontend/views/layouts/main.php:79
+    in /var/vhosts/wd2-team-17/frontend/controllers/CustomerController.php:17
+2016-06-23 11:40:40 [192.168.191.127][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ck7oh06i1f47m88u981ltpmoa4'
+    '_csrf' => 'ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/frontend/web/site/signup'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=ck7oh06i1f47m88u981ltpmoa4; _csrf=ebe11115f3b6b4ca36a40b13e094340b0bab240d8b817e617a4f465a9724fc97a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OrLJQqOUdlUwYnmH9Ejc5q0keFXIcFf-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at wd2-team-17.lx-lehre.hof-university.de Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'wd2-team-17.lx-lehre.hof-university.de'
+    'SERVER_ADDR' => '192.168.84.13'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.191.127'
+    'DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/vhosts/wd2-team-17'
+    'SERVER_ADMIN' => 'webmaster@lx-lehre.hof-university.de'
+    'SCRIPT_FILENAME' => '/var/vhosts/wd2-team-17/frontend/web/index.php'
+    'REMOTE_PORT' => '49313'
+    'REDIRECT_URL' => '/frontend/web/customer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/customer/index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466682040.664
+    'REQUEST_TIME' => 1466682040
+]
