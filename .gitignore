@@ -33,3 +33,6 @@ phpunit.phar
 /.vagrant
 
 tests/_output/*
+
+#Testordner
+TestCRM
