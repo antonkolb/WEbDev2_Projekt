@@ -8660,3 +8660,496 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1466677691.7
     'REQUEST_TIME' => 1466677691
 ]
+2016-06-23 13:26:09 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'team-17'@'localhost' (using password: YES)' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Query.php(247): yii\db\Command->queryOne()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/ActiveQuery.php(290): yii\db\Query->one('<span class="ke...')
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(67): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(53): frontend\controllers\CustomerController->getRecordsByPhoneNumber('<span class="ke...')
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(16): frontend\controllers\CustomerController->findRecordsByQuery()
+#13 [internal function]: frontend\controllers\CustomerController->actionIndex()
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'team-17'@'localhost' (using password: YES)' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Query.php(247): yii\db\Command->queryOne()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/ActiveQuery.php(290): yii\db\Query->one('<span class="ke...')
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(67): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(53): frontend\controllers\CustomerController->getRecordsByPhoneNumber('<span class="ke...')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(16): frontend\controllers\CustomerController->findRecordsByQuery()
+#11 [internal function]: frontend\controllers\CustomerController->actionIndex()
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/web/index.php(18): yii\base\Application->run()
+#18 {main}
+Additional Information:
+
+2016-06-23 13:26:09 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd81a82c3778f84c3b2f2b13fed17ea4aca184f718db0f842214283cb55ef32d7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ngVo5xlvDcIjt_PqUEPiK_-86AW9Z77t\";}'
+    'PHPSESSID' => 'hlp48co8scmnfuh86st2p4fvn7'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'V2vHUcCov38AAAM3qYsAAAAC'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'V2vHUcCov38AAAM3qYsAAAAC'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'localhost'
+    'SSL_SERVER_S_DN_C' => 'DE'
+    'SSL_SERVER_S_DN_ST' => 'Berlin'
+    'SSL_SERVER_S_DN_L' => 'Berlin'
+    'SSL_SERVER_S_DN_O' => 'Apache Friends'
+    'SSL_SERVER_S_DN_CN' => 'localhost'
+    'SSL_SERVER_I_DN_C' => 'DE'
+    'SSL_SERVER_I_DN_ST' => 'Berlin'
+    'SSL_SERVER_I_DN_L' => 'Berlin'
+    'SSL_SERVER_I_DN_O' => 'Apache Friends'
+    'SSL_SERVER_I_DN_CN' => 'localhost'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.18'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/1.0.2h'
+    'SSL_PROTOCOL' => 'TLSv1'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'ECDHE-RSA-AES128-SHA'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '00'
+    'SSL_SERVER_V_START' => 'Oct  1 09:10:30 2004 GMT'
+    'SSL_SERVER_V_END' => 'Sep 30 09:10:30 2010 GMT'
+    'SSL_SERVER_S_DN' => 'CN=localhost,O=Apache Friends,L=Berlin,ST=Berlin,C=DE'
+    'SSL_SERVER_I_DN' => 'CN=localhost,O=Apache Friends,L=Berlin,ST=Berlin,C=DE'
+    'SSL_SERVER_A_KEY' => 'rsaEncryption'
+    'SSL_SERVER_A_SIG' => 'md5WithRSAEncryption'
+    'SSL_SESSION_ID' => '28894ad2b36bb3b6b137d6bf691f3e5f9bbd795b8a248caf8febb8c97648caa3'
+    'SSL_SESSION_RESUMED' => 'Resumed'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=d81a82c3778f84c3b2f2b13fed17ea4aca184f718db0f842214283cb55ef32d7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ngVo5xlvDcIjt_PqUEPiK_-86AW9Z77t%22%3B%7D; PHPSESSID=hlp48co8scmnfuh86st2p4fvn7'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/5.6.21 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/Webdev/frontend/web/index.php'
+    'REMOTE_PORT' => '49244'
+    'REDIRECT_URL' => '/Webdev/frontend/web/customer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Webdev/frontend/web/customer/index'
+    'SCRIPT_NAME' => '/Webdev/frontend/web/index.php'
+    'PHP_SELF' => '/Webdev/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466681169.148
+    'REQUEST_TIME' => 1466681169
+]
+2016-06-23 13:40:46 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'team-17'@'localhost' (using password: YES)' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Query.php(247): yii\db\Command->queryOne()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/ActiveQuery.php(290): yii\db\Query->one('<span class="ke...')
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(67): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(53): frontend\controllers\CustomerController->getRecordsByPhoneNumber('<span class="ke...')
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(16): frontend\controllers\CustomerController->findRecordsByQuery()
+#13 [internal function]: frontend\controllers\CustomerController->actionIndex()
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'team-17'@'localhost' (using password: YES)' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Query.php(247): yii\db\Command->queryOne()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/ActiveQuery.php(290): yii\db\Query->one('<span class="ke...')
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(67): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(53): frontend\controllers\CustomerController->getRecordsByPhoneNumber('<span class="ke...')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(16): frontend\controllers\CustomerController->findRecordsByQuery()
+#11 [internal function]: frontend\controllers\CustomerController->actionIndex()
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/web/index.php(18): yii\base\Application->run()
+#18 {main}
+Additional Information:
+
+2016-06-23 13:40:46 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd81a82c3778f84c3b2f2b13fed17ea4aca184f718db0f842214283cb55ef32d7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ngVo5xlvDcIjt_PqUEPiK_-86AW9Z77t\";}'
+    'PHPSESSID' => 'hlp48co8scmnfuh86st2p4fvn7'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'V2vKvsCov38AAANDbDQAAAAL'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'V2vKvsCov38AAANDbDQAAAAL'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'localhost'
+    'SSL_SERVER_S_DN_C' => 'DE'
+    'SSL_SERVER_S_DN_ST' => 'Berlin'
+    'SSL_SERVER_S_DN_L' => 'Berlin'
+    'SSL_SERVER_S_DN_O' => 'Apache Friends'
+    'SSL_SERVER_S_DN_CN' => 'localhost'
+    'SSL_SERVER_I_DN_C' => 'DE'
+    'SSL_SERVER_I_DN_ST' => 'Berlin'
+    'SSL_SERVER_I_DN_L' => 'Berlin'
+    'SSL_SERVER_I_DN_O' => 'Apache Friends'
+    'SSL_SERVER_I_DN_CN' => 'localhost'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.18'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/1.0.2h'
+    'SSL_PROTOCOL' => 'TLSv1'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'ECDHE-RSA-AES128-SHA'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '00'
+    'SSL_SERVER_V_START' => 'Oct  1 09:10:30 2004 GMT'
+    'SSL_SERVER_V_END' => 'Sep 30 09:10:30 2010 GMT'
+    'SSL_SERVER_S_DN' => 'CN=localhost,O=Apache Friends,L=Berlin,ST=Berlin,C=DE'
+    'SSL_SERVER_I_DN' => 'CN=localhost,O=Apache Friends,L=Berlin,ST=Berlin,C=DE'
+    'SSL_SERVER_A_KEY' => 'rsaEncryption'
+    'SSL_SERVER_A_SIG' => 'md5WithRSAEncryption'
+    'SSL_SESSION_ID' => '0cb7fd7280edf0aa949c5d4c56247e074a14c0ea0cd38778fbbb8aa4dc6e4423'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=d81a82c3778f84c3b2f2b13fed17ea4aca184f718db0f842214283cb55ef32d7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ngVo5xlvDcIjt_PqUEPiK_-86AW9Z77t%22%3B%7D; PHPSESSID=hlp48co8scmnfuh86st2p4fvn7'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/5.6.21 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/Webdev/frontend/web/index.php'
+    'REMOTE_PORT' => '49315'
+    'REDIRECT_URL' => '/Webdev/frontend/web/customer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Webdev/frontend/web/customer/index'
+    'SCRIPT_NAME' => '/Webdev/frontend/web/index.php'
+    'PHP_SELF' => '/Webdev/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466682046.921
+    'REQUEST_TIME' => 1466682046
+]
+2016-06-23 13:42:51 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'team-17'@'localhost' (using password: YES)' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Query.php(247): yii\db\Command->queryOne()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/ActiveQuery.php(290): yii\db\Query->one('<span class="ke...')
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(67): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(53): frontend\controllers\CustomerController->getRecordsByPhoneNumber('<span class="ke...')
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(16): frontend\controllers\CustomerController->findRecordsByQuery()
+#13 [internal function]: frontend\controllers\CustomerController->actionIndex()
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'team-17'@'localhost' (using password: YES)' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Query.php(247): yii\db\Command->queryOne()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/ActiveQuery.php(290): yii\db\Query->one('<span class="ke...')
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(67): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(53): frontend\controllers\CustomerController->getRecordsByPhoneNumber('<span class="ke...')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(16): frontend\controllers\CustomerController->findRecordsByQuery()
+#11 [internal function]: frontend\controllers\CustomerController->actionIndex()
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/web/index.php(18): yii\base\Application->run()
+#18 {main}
+Additional Information:
+
+2016-06-23 13:42:51 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd81a82c3778f84c3b2f2b13fed17ea4aca184f718db0f842214283cb55ef32d7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ngVo5xlvDcIjt_PqUEPiK_-86AW9Z77t\";}'
+    'PHPSESSID' => 'hlp48co8scmnfuh86st2p4fvn7'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'V2vLO8Cov38AAANBhRsAAAAJ'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'V2vLO8Cov38AAANBhRsAAAAJ'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'localhost'
+    'SSL_SERVER_S_DN_C' => 'DE'
+    'SSL_SERVER_S_DN_ST' => 'Berlin'
+    'SSL_SERVER_S_DN_L' => 'Berlin'
+    'SSL_SERVER_S_DN_O' => 'Apache Friends'
+    'SSL_SERVER_S_DN_CN' => 'localhost'
+    'SSL_SERVER_I_DN_C' => 'DE'
+    'SSL_SERVER_I_DN_ST' => 'Berlin'
+    'SSL_SERVER_I_DN_L' => 'Berlin'
+    'SSL_SERVER_I_DN_O' => 'Apache Friends'
+    'SSL_SERVER_I_DN_CN' => 'localhost'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.18'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/1.0.2h'
+    'SSL_PROTOCOL' => 'TLSv1'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'ECDHE-RSA-AES128-SHA'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '00'
+    'SSL_SERVER_V_START' => 'Oct  1 09:10:30 2004 GMT'
+    'SSL_SERVER_V_END' => 'Sep 30 09:10:30 2010 GMT'
+    'SSL_SERVER_S_DN' => 'CN=localhost,O=Apache Friends,L=Berlin,ST=Berlin,C=DE'
+    'SSL_SERVER_I_DN' => 'CN=localhost,O=Apache Friends,L=Berlin,ST=Berlin,C=DE'
+    'SSL_SERVER_A_KEY' => 'rsaEncryption'
+    'SSL_SERVER_A_SIG' => 'md5WithRSAEncryption'
+    'SSL_SESSION_ID' => '0cb7fd7280edf0aa949c5d4c56247e074a14c0ea0cd38778fbbb8aa4dc6e4423'
+    'SSL_SESSION_RESUMED' => 'Resumed'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=d81a82c3778f84c3b2f2b13fed17ea4aca184f718db0f842214283cb55ef32d7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ngVo5xlvDcIjt_PqUEPiK_-86AW9Z77t%22%3B%7D; PHPSESSID=hlp48co8scmnfuh86st2p4fvn7'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/5.6.21 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/Webdev/frontend/web/index.php'
+    'REMOTE_PORT' => '49318'
+    'REDIRECT_URL' => '/Webdev/frontend/web/customer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Webdev/frontend/web/customer/index'
+    'SCRIPT_NAME' => '/Webdev/frontend/web/index.php'
+    'PHP_SELF' => '/Webdev/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466682171.694
+    'REQUEST_TIME' => 1466682171
+]
+2016-06-23 13:45:10 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'team-17'@'localhost' (using password: YES)' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Query.php(247): yii\db\Command->queryOne()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/ActiveQuery.php(290): yii\db\Query->one('<span class="ke...')
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(67): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(53): frontend\controllers\CustomerController->getRecordsByPhoneNumber('<span class="ke...')
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(16): frontend\controllers\CustomerController->findRecordsByQuery()
+#13 [internal function]: frontend\controllers\CustomerController->actionIndex()
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'team-17'@'localhost' (using password: YES)' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Query.php(247): yii\db\Command->queryOne()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/ActiveQuery.php(290): yii\db\Query->one('<span class="ke...')
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(67): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(53): frontend\controllers\CustomerController->getRecordsByPhoneNumber('<span class="ke...')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/controllers/CustomerController.php(16): frontend\controllers\CustomerController->findRecordsByQuery()
+#11 [internal function]: frontend\controllers\CustomerController->actionIndex()
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/frontend/web/index.php(18): yii\base\Application->run()
+#18 {main}
+Additional Information:
+
+2016-06-23 13:45:10 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd81a82c3778f84c3b2f2b13fed17ea4aca184f718db0f842214283cb55ef32d7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ngVo5xlvDcIjt_PqUEPiK_-86AW9Z77t\";}'
+    'PHPSESSID' => 'hlp48co8scmnfuh86st2p4fvn7'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'V2vLxsCov38AAAM4ueQAAAAD'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'V2vLxsCov38AAAM4ueQAAAAD'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'localhost'
+    'SSL_SERVER_S_DN_C' => 'DE'
+    'SSL_SERVER_S_DN_ST' => 'Berlin'
+    'SSL_SERVER_S_DN_L' => 'Berlin'
+    'SSL_SERVER_S_DN_O' => 'Apache Friends'
+    'SSL_SERVER_S_DN_CN' => 'localhost'
+    'SSL_SERVER_I_DN_C' => 'DE'
+    'SSL_SERVER_I_DN_ST' => 'Berlin'
+    'SSL_SERVER_I_DN_L' => 'Berlin'
+    'SSL_SERVER_I_DN_O' => 'Apache Friends'
+    'SSL_SERVER_I_DN_CN' => 'localhost'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.18'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/1.0.2h'
+    'SSL_PROTOCOL' => 'TLSv1'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'ECDHE-RSA-AES128-SHA'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '00'
+    'SSL_SERVER_V_START' => 'Oct  1 09:10:30 2004 GMT'
+    'SSL_SERVER_V_END' => 'Sep 30 09:10:30 2010 GMT'
+    'SSL_SERVER_S_DN' => 'CN=localhost,O=Apache Friends,L=Berlin,ST=Berlin,C=DE'
+    'SSL_SERVER_I_DN' => 'CN=localhost,O=Apache Friends,L=Berlin,ST=Berlin,C=DE'
+    'SSL_SERVER_A_KEY' => 'rsaEncryption'
+    'SSL_SERVER_A_SIG' => 'md5WithRSAEncryption'
+    'SSL_SESSION_ID' => '0cb7fd7280edf0aa949c5d4c56247e074a14c0ea0cd38778fbbb8aa4dc6e4423'
+    'SSL_SESSION_RESUMED' => 'Resumed'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=d81a82c3778f84c3b2f2b13fed17ea4aca184f718db0f842214283cb55ef32d7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ngVo5xlvDcIjt_PqUEPiK_-86AW9Z77t%22%3B%7D; PHPSESSID=hlp48co8scmnfuh86st2p4fvn7'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/5.6.21 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/Webdev/frontend/web/index.php'
+    'REMOTE_PORT' => '49320'
+    'REDIRECT_URL' => '/Webdev/frontend/web/customer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Webdev/frontend/web/customer/index'
+    'SCRIPT_NAME' => '/Webdev/frontend/web/index.php'
+    'PHP_SELF' => '/Webdev/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466682310.189
+    'REQUEST_TIME' => 1466682310
+]
