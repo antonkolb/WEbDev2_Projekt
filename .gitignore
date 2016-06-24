@@ -36,5 +36,9 @@ tests/_output/*
 
 #Testordner
 TestCRM
+
+#Logfiles
 frontend/runtime/
+frontend/web/assets/
+backend/runtime/
 frontend/web/assets/
