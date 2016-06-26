@@ -19,34 +19,26 @@ use frontend\models\ContactForm;
  */
 abstract class AbstractController extends Controller
 {
-    /**
+	/**
      * @inheritdoc
+	 * requires to be logged in to see al inheritet Controlelrs/functions
+	 * see for more information: http://stackoverflow.com/questions/30067849/yii2-require-all-controller-and-action-to-login
      */
-    public function behaviors()
+	public function behaviors()
     {
         return [
-            'access' => [
+    		'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'signup'],
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],//replaced <signup> with <login>+<error>
-                        'allow' => true,
-                       // 'roles' => ['?'],//dommented out
-                    ],
-                    [
-                        'actions' => ['logout', 'index'],//added <index>
                         'allow' => true,
                         'roles' => ['@'],
                     ],
                 ],
             ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
         ];
     }
 }
+
+
+
