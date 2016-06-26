@@ -4,7 +4,6 @@ namespace app\models\main;
 
 /**
  *
- * @author Anton Kolb
  */
 
 abstract class AbstractGame implements IBasicGame {
