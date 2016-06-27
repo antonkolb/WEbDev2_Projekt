@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models\main;
+namespace frontend\models\main;
 
 /**
  *
@@ -29,7 +29,7 @@ abstract class AbstractGame implements IBasicGame {
     function initGame($level = 1, $numEx = 1){
 
 		$this->$numEx = $numEx;
-		$this->$difficulty = $difficulty; //voerst sinnlos, nur damit es gespeichert ist
+		//$this->$difficulty = $level; //voerst sinnlos, nur damit es gespeichert ist
 
 		for( $i=0; $i<$numEx; ++$i ){
 			$sum[$i] = rand(2, 10*$level); //lazy
@@ -65,5 +65,16 @@ abstract class AbstractGame implements IBasicGame {
 		return $feedback;
 	
 	}
+
+    public function rules()
+    {
+      return [
+		['number1', 'each', 'rule' => ['required']],
+		['number2', 'each', 'rule' => ['required']],
+		['sum', 'each', 'rule' => ['required']],
+		['correctAnswer', 'each', 'rule' => ['required']],
+		['userAnswer', 'each', 'rule' => ['required']],
+        ];
+    }
 }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models\main;
+namespace frontend\models\main;
 
 /**
  * Das IAdvancedGame Interface beschreibt eine Zukunftsorientierte 

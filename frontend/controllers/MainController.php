@@ -3,6 +3,7 @@
 namespace frontend\controllers;
 
 use frontend\controllers\AbstractController;
+use frontend\models\main\Game17_1;
 
 class MainController extends AbstractController{
 
@@ -22,7 +23,11 @@ class MainController extends AbstractController{
     public function actionAufgabe1()
     {
         //return $this->render('aufgabe1');
-	return "Aufgabe 1";
+
+        $model = new Game17_1();
+	$model->initGame(1, 8);
+        return $this->render('aufgabe1', ['model' => $model]);
+    
     }
 
     /**

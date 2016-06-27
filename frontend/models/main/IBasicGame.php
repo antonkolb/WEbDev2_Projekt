@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models\main;
+namespace frontend\models\main;
 
 /**
  * Das IGame Interface beschreibt das Interface, das zum implementieren 
