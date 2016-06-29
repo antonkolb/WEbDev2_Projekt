@@ -6,35 +6,38 @@ namespace frontend\models\main;
  *
  */
 
-abstract class AbstractGame implements IBasicGame {
-    
-	private $numEx; //numberOfExercises;
-	private $difficulty; //schwierigkeitsgrad, Level	
+use Yii;
+use yii\base\Model;
 
-	private $number1; //Summand 1
-	private $number2; //Summand 2
-	private $sum; //Summe
-	private $correctAnswer; //erwartete Antwort hier reinspeichern
+abstract class AbstractGame extends Model implements IBasicGame {
+    
+	public $numEx; //numberOfExercises;
+	public $difficulty; //schwierigkeitsgrad, Level	
+
+	public $number1; //Summand 1
+	public $number2; //Summand 2
+	public $sum; //Summe
+	public $correctAnswer; //erwartete Antwort hier reinspeichern
 	
 	//stuff for statistic, not used right now
-	private $userAnswer;
-	private $amountOfTries;
-	private $elapsedTime;
+	public $userAnswer;
+	public $amountOfTries;
+	public $elapsedTime;
 
     /**
 	 * Inherited from Interface:
      * Die initGame Methode kuemmert sich um die Vorbereitung des Spieles,
      * zum Beispiel Vorbelegung der Werte
      */
-    function initGame($level = 1, $numEx = 1){
+    function initGame($level = 1, $numOfExercises = 1){
 
-		$this->$numEx = $numEx;
-		//$this->$difficulty = $level; //voerst sinnlos, nur damit es gespeichert ist
+		$this->numEx = $numOfExercises;
+		$this->difficulty = $level; //voerst sinnlos, nur damit es gespeichert ist
 
-		for( $i=0; $i<$numEx; ++$i ){
-			$sum[$i] = rand(2, 10*$level); //lazy
-			$number1[$i] = rand( 1, $sum[$i]-1 ); //keine Rechnungen mit 0
-			$number2[$i] = $sum - $number1;
+		for( $i=0; $i<$this->numEx; ++$i ){
+			$this->sum[$i] = rand(2, 10*$this->difficulty); //lazy
+			$this->number1[$i] = rand( 1, $this->sum[$i]-1 ); //keine Rechnungen mit 0
+			$this->number2[$i] = $this->sum[$i] - $this->number1[$i];
 
 			/*Rest in den jeweiligen GameKlassen bestimmen:
 			Welcher der Zahlen soll die Loesung sein?
@@ -53,9 +56,9 @@ abstract class AbstractGame implements IBasicGame {
 
 		$feedback="";	
 	
-		for( $i=0; $i<$numEx; ++$i ){
-			if( $userAnswer[$i] != $correctAnswer[$i] ){
-				$feedback = $feedback + "Aufgabe " + $i + " inkorrekt. Richtige Antwort: " + $correctAnwer[$i] + " Deine Antwort: " + $userAnswer[$i] + "</br>";
+		for( $i=0; $i<$this->numEx; ++$i ){
+			if( $this->userAnswer[$i] != $this->correctAnswer[$i] ){
+				$feedback = $feedback + "Aufgabe " + $i + " inkorrekt. Richtige Antwort: " + $this->correctAnwer[$i] + " Deine Antwort: " + $userAnswer[$i] + "</br>";
 			}else{
 				//nothing
 			}

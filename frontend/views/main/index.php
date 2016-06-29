@@ -17,10 +17,10 @@ $this->registerCssFile(Yii::$app->request->baseUrl.'/css/main.css');
         <p class="lead">Aufgabe 3: bla</p>
         <p class="lead">Aufgabe 4: blub</p>
 
-        <p><a class="btn btn-md btn-info gamebtn" href="main/aufgabe1">Aufgabe 1</a>
-	   <a class="btn btn-md btn-info gamebtn" href="main/aufgabe2">Aufgabe 2</a>
-      	   <a class="btn btn-md btn-info gamebtn" href="main/aufgabe3">Aufgabe 3</a>
-	   <a class="btn btn-md btn-info gamebtn" href="main/aufgabe4">Aufgabe 4</a>
+		<p><a class="btn btn-md btn-info gamebtn" href="main/game17_1">Aufgabe 1</a>
+		   <a class="btn btn-md btn-info gamebtn" href="main/game17_2">Aufgabe 2</a>
+		   <a class="btn btn-md btn-info gamebtn" href="main/game17_3">Aufgabe 3</a>
+		   <a class="btn btn-md btn-info gamebtn" href="main/game17_4">Aufgabe 4</a>
 	</p>
     </div>
 </div>

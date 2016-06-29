@@ -4,7 +4,7 @@ use yii\widgets\ActiveForm;
 
 $form = ActiveForm::begin();
 
-for( $i=1,$out=""; $i<=$model->numEx; $i++ ) {
+for( $i=0,$out=""; $i < $model->numEx; $i++ ) {
 	$out .= "\n";
 	$out .= Html::activeHiddenInput($model,"number1[$i]");
 	$out .= "\n";

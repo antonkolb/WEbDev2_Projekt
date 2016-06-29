@@ -20,13 +20,13 @@ class MainController extends AbstractController{
      *
      * @return view der Aufgabe
      */
-    public function actionAufgabe1()
+    public function actionGame17_1()
     {
         //return $this->render('aufgabe1');
 
         $model = new Game17_1();
 	$model->initGame(1, 8);
-        return $this->render('aufgabe1', ['model' => $model]);
+        return $this->render('game17_1', ['model' => $model]);
     
     }
 
@@ -35,7 +35,7 @@ class MainController extends AbstractController{
      *
      * @return view der Aufgabe
      */
-    public function actionAufgabe2()
+    public function actionGame17_2()
     {
         //return $this->render('aufgabe2');
 	return "Aufgabe 2";
@@ -46,7 +46,7 @@ class MainController extends AbstractController{
      *
      * @return view der Aufgabe
      */
-    public function actionAufgabe3()
+    public function actionGame17_3()
     {
         //return $this->render('aufgabe3');
 	return "Aufgabe 3";
@@ -57,7 +57,7 @@ class MainController extends AbstractController{
      *
      * @return view der Aufgabe
      */
-    public function actionAufgabe4()
+    public function actionGame17_4()
     {
         //return $this->render('aufgabe4');
 	return "Aufgabe 4";
