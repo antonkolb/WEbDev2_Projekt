@@ -28,8 +28,8 @@ for( $i=0; $i < $model->numEx; $i++ ) {
 	$out .= " + ";
 	$out .= $model->number2[$i];
 	$out .= " = ";
-	$out .= $form->field($model, "userAnswer[$i]")->label(false);
 	$out .= "</div>";
+	$out .= $form->field($model, "userAnswer[$i]")->label(false);
 }
 
 $out .= "<div class=\"form-group\">";
