@@ -31,7 +31,7 @@ abstract class AbstractGame extends Model implements IBasicGame {
      */
     function initGame($level = 1, $numOfExercises = 1){
 
-		$this->numEx = $numOfExercises;
+		$this->numEx = $numOfExercises; 
 		$this->difficulty = $level; //voerst sinnlos, nur damit es gespeichert ist
 
 		for( $i=0; $i<$this->numEx; ++$i ){

@@ -43,3 +43,7 @@ frontend/web/assets/
 backend/runtime/
 frontend/web/assets/
 console/runtime/
+
+#Unixstuff
+*.swp
+*.swo
