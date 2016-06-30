@@ -2,6 +2,7 @@
 
 namespace frontend\controllers;
 
+use Yii;
 use frontend\controllers\AbstractController;
 use frontend\models\main\Game17_1;
 
@@ -25,8 +26,15 @@ class MainController extends AbstractController{
         //return $this->render('aufgabe1');
 
         $model = new Game17_1();
-	$model->initGame(1, 8);
-        return $this->render('game17_1', ['model' => $model]);
+
+        //if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+	if (isset($_POST['back'])){
+            return $this->goBack();
+	}
+	else{
+		$model->initGame(1, 8);
+        	return $this->render('game17_1', ['model' => $model]);
+	}
     
     }
 

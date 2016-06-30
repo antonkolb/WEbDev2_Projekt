@@ -2,6 +2,8 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
+$this->registerCssFile(Yii::$app->request->baseUrl.'/css/game.css');
+
 $form = ActiveForm::begin();
 
 for( $i=0,$out=""; $i < $model->numEx; $i++ ) {
@@ -19,7 +21,8 @@ for( $i=0,$out=""; $i < $model->numEx; $i++ ) {
 }
 
 $out .= "<div class=\"form-group\">";
-$out .= Html::submitButton('Korrigieren', ['class' => 'btn btn-primary']); 
+$out .= Html::submitButton('Korrigieren', ['name'=>'submit', 'class' => 'btn btn-primary lowbtn']);
+$out .= Html::submitButton('Zur&uuml;ck', ['name'=>'back', 'class' => 'btn btn-primary lowbtn']); 
 $out .= "</div>";
 
 echo $out;
