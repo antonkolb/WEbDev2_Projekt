@@ -57,8 +57,9 @@ abstract class AbstractGame extends Model implements IBasicGame {
 		$feedback="";	
 	
 		for( $i=0; $i<$this->numEx; ++$i ){
+				$feedback += $this->numEx;
 			if( $this->userAnswer[$i] != $this->correctAnswer[$i] ){
-				$feedback = $feedback + "Aufgabe " + $i + " inkorrekt. Richtige Antwort: " + $this->correctAnwer[$i] + " Deine Antwort: " + $userAnswer[$i] + "</br>";
+				//$feedback = $feedback + "Aufgabe " + $i + " inkorrekt. Richtige Antwort: " + $this->correctAnwer[$i] + " Deine Antwort: " + $userAnswer[$i] + "</br>";
 			}else{
 				//nothing
 			}
