@@ -23,11 +23,13 @@ for( $i=0; $i < $model->numEx; $i++ ) {
 	$out .= "\n";
 
 	$out .= "<h3>Aufgabe $i</h3>\n";
+	$out .= '<div class="aufgabenstellung">';
 	$out .= $model->number1[$i]; 
 	$out .= " + ";
 	$out .= $model->number2[$i];
 	$out .= " = ";
 	$out .= $form->field($model, "userAnswer[$i]")->label(false);
+	$out .= "</div>";
 }
 
 $out .= "<div class=\"form-group\">";
