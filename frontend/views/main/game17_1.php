@@ -21,7 +21,7 @@ for( $i=0,$out=""; $i < $model->numEx; $i++ ) {
 }
 
 $out .= "<div class=\"form-group\">";
-$out .= Html::submitButton('Korrigieren', ['name'=>'submit', 'class' => 'btn btn-primary lowbtn']);
+$out .= Html::submitButton('Korrigieren', ['name'=>'check', 'class' => 'btn btn-primary lowbtn']);
 $out .= Html::submitButton('Zur&uuml;ck', ['name'=>'back', 'class' => 'btn btn-primary lowbtn']); 
 $out .= "</div>";
 
