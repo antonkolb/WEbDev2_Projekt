@@ -10,7 +10,10 @@ use Yii;
 use yii\base\Model;
 
 abstract class AbstractGame extends Model implements IBasicGame {
-    
+   
+	//Each variable needs to be put in a HiddenInputField so it will be taken over
+	//Otherwise value gets reseted!
+ 
 	public $numEx; //numberOfExercises;
 	public $difficulty; //schwierigkeitsgrad, Level	
 
@@ -19,6 +22,9 @@ abstract class AbstractGame extends Model implements IBasicGame {
 	public $sum; //Summe
 	public $correctAnswer; //erwartete Antwort hier reinspeichern
 	
+	//set to true if user presses button to check answers; default is false
+	public $commited = 'false';
+
 	//stuff for statistic, not used right now
 	public $userAnswer;
 	public $amountOfTries;
@@ -34,7 +40,7 @@ abstract class AbstractGame extends Model implements IBasicGame {
 		$this->numEx = $numOfExercises; 
 		$this->difficulty = $level; //voerst sinnlos, nur damit es gespeichert ist
 
-		for( $i=0; $i<$this->numEx; ++$i ){
+		for( $i=1; $i<=$this->numEx; ++$i ){
 			$this->sum[$i] = rand(2, 10*$this->difficulty); //lazy
 			$this->number1[$i] = rand( 1, $this->sum[$i]-1 ); //keine Rechnungen mit 0
 			$this->number2[$i] = $this->sum[$i] - $this->number1[$i];
@@ -56,10 +62,9 @@ abstract class AbstractGame extends Model implements IBasicGame {
 
 		$feedback="";	
 	
-		for( $i=0; $i<$this->numEx; ++$i ){
-				$feedback += $this->numEx;
+		for( $i=1; $i<=$this->numEx; ++$i ){
 			if( $this->userAnswer[$i] != $this->correctAnswer[$i] ){
-				//$feedback = $feedback + "Aufgabe " + $i + " inkorrekt. Richtige Antwort: " + $this->correctAnwer[$i] + " Deine Antwort: " + $userAnswer[$i] + "</br>";
+				$feedback = $feedback . "Aufgabe " . $i . " inkorrekt. Richtige Antwort: " . $this->correctAnswer[$i] . " Deine Antwort: " . $this->userAnswer[$i] . "</br>";
 			}else{
 				//nothing
 			}
@@ -70,6 +75,12 @@ abstract class AbstractGame extends Model implements IBasicGame {
 	
 	}
 
+	
+	//wird vll gebraucht um die Spiele in db abzuspeichern
+	function save(){
+
+	}
+
     public function rules()
     {
       return [
@@ -78,7 +89,19 @@ abstract class AbstractGame extends Model implements IBasicGame {
 		['sum', 'each', 'rule' => ['required']],
 		['correctAnswer', 'each', 'rule' => ['required']],
 		['userAnswer', 'each', 'rule' => ['required']],
-        ];
+/*
+		['number1', 'each', 'rule' => ['integer']],
+		['number2', 'each', 'rule' => ['integer']],
+		['sum', 'each', 'rule' => ['integer']],
+		['correctAnswer', 'each', 'rule' => ['integer']],
+		['userAnswer', 'each', 'rule' => ['integer']],
+   */     ];
     }
+	
+	//if a speicifc term should be displayed instead of name of variable
+	//see http://stackoverflow.com/questions/28877702/yii2-how-to-add-custom-error-messages-on-input-fields
+	public function attributeLabels(){
+		
+	}
 }
 

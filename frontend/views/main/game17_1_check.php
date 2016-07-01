@@ -3,9 +3,31 @@ use yii\helpers\Html;
 
 //Hier if statements, wenn was anderes abgefragt wird, als das Ergebnis!
 
+$this->title = 'Spiel 1';
+$this->params['breadcrumbs'][] = $this->title;
 
-$out = "<h3>Ergebnisse f&uuml;r Aufgabe 1</h3>";
-$out .= "<ul>";
+$out="";
+$out .= Html::activeHiddenInput($model,"numEx");
+$out .= "\n";
+$out .= Html::activeHiddenInput($model,"difficulty");
+$out .= "\n";
+$out .= Html::activeHiddenInput($model,"commited");
+$out .= "\n";
+
+for( $i=1; $i <= $model->numEx; $i++ ) {
+	$out .= "\n";
+	$out .= Html::activeHiddenInput($model,"number1[$i]");
+	$out .= "\n";
+	$out .= Html::activeHiddenInput($model,"number2[$i]");
+	$out .= "\n";
+	$out .= Html::activeHiddenInput($model,"sum[$i]");
+	$out .= "\n";
+	$out .= Html::activeHiddenInput($model,"correctAnswer[$i]");
+	$out .= "\n";
+}
+
+$out .= "<h3>Ergebnisse f&uuml;r Spiel 1</h3>";
+/*$out .= "<ul>";
 
 
 $out .= "<li><h4>Aufgabe 1</h4>";
@@ -17,27 +39,10 @@ $out .= $model->sum[3];
 $out .= " numEx: ";
 $out .= $model->numEx; 
 
-$out .= "</li>";
-$out .= "<li>";
+$out .= "</li>" */;
 $out .= $model->verifyAnswers();
-$out .= "</li>";
 
 $out .= "</ul>";
 echo $out;
-
-var_dump( $model->number1 );
-echo "</br>";
-var_dump( $model->number2 );
-echo "</br>";
-var_dump( $model->sum );
-echo "</br>";
-var_dump( $model->userAnswer );
-echo "</br>";
-var_dump( $model->correctAnswer );
-echo "</br>";
-var_dump( $model->numEx );
-echo "</br>";
-var_dump( $model->difficulty );
-echo "</br>";
 
 ?>
