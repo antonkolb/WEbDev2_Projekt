@@ -108,6 +108,7 @@ abstract class AbstractGame extends Model implements IBasicGame {
     public function rules(){
 	
 		return [ 
+		['number1', 'each', 'rule' => ['required']],
 		['number2', 'each', 'rule' => ['required']],
 		['sum', 'each', 'rule' => ['required']],
 		['correctAnswer', 'each', 'rule' => ['required']],
