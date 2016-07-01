@@ -24,6 +24,9 @@ abstract class AbstractGame extends Model implements IBasicGame {
 	
 	//set to true if user presses button to check answers; default is false
 	public $commited = 'false';
+	//set to true if user loads a game, default is false
+	//not sure if useful
+	public $started = 'false';
 
 	//stuff for statistic, not used right now
 	public $userAnswer;
@@ -59,6 +62,27 @@ abstract class AbstractGame extends Model implements IBasicGame {
      * @return Gibt Fehlerstring zurueck wenn Antworten inkorrekt, ansonsten leeren String
      */
 	function verifyAnswers(){
+		//Interface Feedback
+		$Ifeedback="";	
+	
+		for( $i=1; $i<=$this->numEx; ++$i ){
+			if( $this->userAnswer[$i] != $this->correctAnswer[$i] ){
+				$Ifeedback = $Ifeedback . "Aufgabe " . $i . " inkorrekt. Richtige Antwort: " . $this->correctAnswer[$i] . " Deine Antwort: " . $this->userAnswer[$i] . "</br>";
+			}else{
+				//nothing
+			}
+
+		}
+		
+		return $Ifeedback;
+	
+	}
+	
+	/**
+	* wie verifyAnswers, nur mit Auflistung aller Aufgaben, besser fuer unsere zwecke
+	* @return Gibt Fehlerstring zurueck wenn Antworten inkorrekt, ansonsten leeren String
+    */
+	function checkAnswers(){
 
 		$feedback="";	
 	
@@ -66,7 +90,7 @@ abstract class AbstractGame extends Model implements IBasicGame {
 			if( $this->userAnswer[$i] != $this->correctAnswer[$i] ){
 				$feedback = $feedback . "Aufgabe " . $i . " inkorrekt. Richtige Antwort: " . $this->correctAnswer[$i] . " Deine Antwort: " . $this->userAnswer[$i] . "</br>";
 			}else{
-				//nothing
+				$feedback = $feedback . "Aufgabe " . $i . " korrekt. Richtige Antwort: " . $this->correctAnswer[$i] . " Deine Antwort: " . $this->userAnswer[$i] . "</br>";
 			}
 
 		}
@@ -74,7 +98,6 @@ abstract class AbstractGame extends Model implements IBasicGame {
 		return $feedback;
 	
 	}
-
 	
 	//wird vll gebraucht um die Spiele in db abzuspeichern
 	function save(){

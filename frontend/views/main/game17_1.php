@@ -1,6 +1,10 @@
 <?php
+/* @var $this yii\web\View */
+/* @var $form yii\bootstrap\ActiveForm */
+/* @var $model \frontend\models\main\Game17_1 */
+
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap\ActiveForm;
 
 $this->registerCssFile(Yii::$app->request->baseUrl.'/css/game.css');
 
@@ -15,6 +19,9 @@ $out .= Html::activeHiddenInput($model,"difficulty");
 $out .= "\n";
 $out .= Html::activeHiddenInput($model,"commited");
 $out .= "\n";
+$out .= Html::activeHiddenInput($model,"started");
+$out .= "\n";
+
 
 for( $i=1; $i <= $model->numEx; $i++ ) {
 	$out .= "\n";

@@ -13,6 +13,8 @@ $out .= Html::activeHiddenInput($model,"difficulty");
 $out .= "\n";
 $out .= Html::activeHiddenInput($model,"commited");
 $out .= "\n";
+$out .= Html::activeHiddenInput($model,"started");
+$out .= "\n";
 
 for( $i=1; $i <= $model->numEx; $i++ ) {
 	$out .= "\n";
@@ -40,7 +42,7 @@ $out .= " numEx: ";
 $out .= $model->numEx; 
 
 $out .= "</li>" */;
-$out .= $model->verifyAnswers();
+$out .= $model->checkAnswers();
 
 $out .= "</ul>";
 echo $out;
