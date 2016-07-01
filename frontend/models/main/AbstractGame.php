@@ -17,10 +17,10 @@ abstract class AbstractGame extends Model implements IBasicGame {
 	public $numEx; //numberOfExercises;
 	public $difficulty; //schwierigkeitsgrad, Level	
 
-	public $number1; //Summand 1
-	public $number2; //Summand 2
-	public $sum; //Summe
-	public $correctAnswer; //erwartete Antwort hier reinspeichern
+	public $number1=array(); //Summand 1
+	public $number2=array(); //Summand 2
+	public $sum=array(); //Summe
+	public $correctAnswer=array(); //erwartete Antwort hier reinspeichern
 	
 	//set to true if user presses button to check answers; default is false
 	public $commited = 'false';
@@ -29,7 +29,7 @@ abstract class AbstractGame extends Model implements IBasicGame {
 	public $started = 'false';
 
 	//stuff for statistic, not used right now
-	public $userAnswer;
+	public $userAnswer=array();
 	public $amountOfTries;
 	public $elapsedTime;
 
@@ -104,21 +104,24 @@ abstract class AbstractGame extends Model implements IBasicGame {
 
 	}
 
-    public function rules()
-    {
-      return [
-		['number1', 'each', 'rule' => ['required']],
+
+    public function rules(){
+	
+		return [ 
 		['number2', 'each', 'rule' => ['required']],
 		['sum', 'each', 'rule' => ['required']],
 		['correctAnswer', 'each', 'rule' => ['required']],
 		['userAnswer', 'each', 'rule' => ['required']],
-/*
+
+		['numEx','required'],
+		['difficulty','required'],
+
 		['number1', 'each', 'rule' => ['integer']],
 		['number2', 'each', 'rule' => ['integer']],
 		['sum', 'each', 'rule' => ['integer']],
 		['correctAnswer', 'each', 'rule' => ['integer']],
 		['userAnswer', 'each', 'rule' => ['integer']],
-   */     ];
+        ];
     }
 	
 	//if a speicifc term should be displayed instead of name of variable

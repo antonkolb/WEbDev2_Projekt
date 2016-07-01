@@ -27,7 +27,7 @@ class MainController extends AbstractController{
 		//if game was started, read game from db
 		//if answers were commited redirect to check view
 		//else
-		$model->initGame(1, 3);
+		$model->initGame(1, 4);
         
 		//pressed Back Button?
 		if (isset($_POST['back'])){
@@ -47,7 +47,13 @@ class MainController extends AbstractController{
 		}
     
     }
-
+	
+	//Nur zum Testen
+    public function actionTest(){
+        $model = new Game17_1();
+		$model->initGame(1, 4);
+		return $this->render('test', ['model' => $model]);
+	}
     /**
      *
      *
