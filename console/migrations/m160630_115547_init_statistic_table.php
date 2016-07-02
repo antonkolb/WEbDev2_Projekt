@@ -10,7 +10,7 @@ class m160630_115547_init_statistic_table extends Migration
           'statistic',
      [
            'userid' => 'pk',
-           'username' => 'pk' -> notNull(),
+           'username' => 'pk',
            'gameKat' =>  'pk',
            'game'=> 'pk',
            'userAnswer' => 'string',
