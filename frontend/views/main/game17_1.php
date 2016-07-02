@@ -6,12 +6,15 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
+//custom CSS
 $this->registerCssFile(Yii::$app->request->baseUrl.'/css/game.css');
 
 $this->title = 'Spiel 1';
 $this->params['breadcrumbs'][] = $this->title;
 
 $form = ActiveForm::begin(['id' => 'game17_1']);
+
+//alle werte vom model rein, die noch gebraucht werden, sonst sind diese leer!
 $out="";
 $out .= Html::activeHiddenInput($model,"numEx");
 $out .= "\n";
@@ -34,6 +37,7 @@ for( $i=1; $i <= $model->numEx; $i++ ) {
 	$out .= Html::activeHiddenInput($model,"correctAnswer[$i]");
 	$out .= "\n";
 
+	//hier beginnt die eigentliche Aufgabe
 	$out .= "<h3>Aufgabe $i</h3>\n";
 	$out .= '<div class="aufgabenstellung">';
 	$out .= $model->number1[$i]; 

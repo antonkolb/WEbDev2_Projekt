@@ -1,11 +1,10 @@
 <?php
 use yii\helpers\Html;
 
-		//Hier if statements, wenn was anderes abgefragt wird, als das Ergebnis!
-
 		$this->title = 'Spiel 1';
 		$this->params['breadcrumbs'][] = $this->title;
 
+		//alle werte vom model rein, die noch gebraucht werden, sonst sind diese leer!
 		$out="";
 		$out .= Html::activeHiddenInput($model,"numEx");
 		$out .= "\n";

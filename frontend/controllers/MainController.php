@@ -21,13 +21,19 @@ class MainController extends AbstractController{
     public function actionGame17_1()
     {
 
-        $model = new Game17_1();
+        $model;
 
 		//insert: check if game is already in DB
 		//if game was started, read game from db
 		//if answers were commited redirect to check view
 		//else
-		$model->initGame(1, 4);
+
+		if(false /*game is in db*/ ){
+		// $model = ...
+		}else{
+       	 	$model = new Game17_1();
+			$model->initGame(1, 4);
+		}
         
 		//pressed Back Button?
 		if (isset($_POST['back'])){
@@ -38,10 +44,11 @@ class MainController extends AbstractController{
 			$model->commited = 'true';
 			return $this->render ( 'game17_1_check', ['model' => $model] );
 		}
-		//already pressed check once?
+		//already pressed check once? NOT WORKING
 		else if ( $model->commited == 'true' ){
 			return "commited";
 		}
+		//render the game site
 		else{
 	        return $this->render('game17_1', ['model' => $model]);
 		}
