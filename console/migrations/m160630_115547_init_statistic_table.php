@@ -5,15 +5,18 @@ use yii\db\Migration;
 class m160630_115547_init_statistic_table extends Migration
 {
     public function up()
-    { $this->createTable(
+    { 
+     $this->createTable(
           'statistic',
-     [     'userid' => 'pk',
+     [
+           'userid' => 'pk',
            'username' => 'pk' -> notNull(),
            'gameKat' =>  'pk',
            'game'=> 'pk',
            'userAnswer' => 'string',
            'amountOfTries' => 'time',
-           'elapsedTime' => 'time', ]
+           'elapsedTime' => 'time',
+      ]
      );
     }
 
