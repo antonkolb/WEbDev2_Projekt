@@ -365,10 +365,10 @@ class WebDriver extends CodeceptionModule implements
     public function _failed(TestInterface $test, $fail)
     {
         $this->debugWebDriverLogs();
-        $filename = str_replace([':', '\\', '/'], ['.', '', ''], Descriptor::getTestSignature($test)) . '.fail';
+        $filename = preg_replace('~\W~', '.', Descriptor::getTestSignature($test));
         $outputDir = codecept_output_dir();
-        $this->_saveScreenshot($outputDir . $filename . '.png');
-        $this->_savePageSource($outputDir . $filename . '.html');
+        $this->_saveScreenshot($outputDir . mb_strcut($filename, 0, 245, 'utf-8') . '.fail.png');
+        $this->_savePageSource($outputDir . mb_strcut($filename, 0, 244, 'utf-8') . '.fail.html');
         $this->debug("Screenshot and page source were saved into '$outputDir' dir");
     }
 
@@ -852,19 +852,29 @@ class WebDriver extends CodeceptionModule implements
     public function seeLink($text, $url = null)
     {
         $nodes = $this->webDriver->findElements(WebDriverBy::partialLinkText($text));
-        if (!$url) {
-            $this->assertNodesContain($text, $nodes, 'a');
-            return;
+        if (empty($nodes)) {
+            $this->fail("No links containing text '$text' were found in page " . $this->_getCurrentUri());
         }
-        $this->assertNodesContain($text, $nodes, "a[href=$url]");
+        if ($url) {
+            $nodes = array_filter(
+                $nodes,
+                function (WebDriverElement $e) use ($url) {
+                    return trim($e->getAttribute('href')) == trim($url);
+                }
+            );
+            if (empty($nodes)) {
+                $this->fail("No links containing text '$text' and URL '$url' were found in page " . $this->_getCurrentUri());
+            }
+        }
     }
-
 
     public function dontSeeLink($text, $url = null)
     {
         $nodes = $this->webDriver->findElements(WebDriverBy::partialLinkText($text));
         if (!$url) {
-            $this->assertNodesNotContain($text, $nodes, 'a');
+            if (!empty($nodes)) {
+                $this->fail("Link containing text '$text' was found in page " . $this->_getCurrentUri());
+            }
             return;
         }
         $nodes = array_filter(
@@ -873,7 +883,9 @@ class WebDriver extends CodeceptionModule implements
                 return trim($e->getAttribute('href')) == trim($url);
             }
         );
-        $this->assertNodesNotContain($text, $nodes, "a[href=$url]");
+        if (!empty($nodes)) {
+            $this->fail("Link containing text '$text' and URL '$url' was found in page " . $this->_getCurrentUri());
+        }
     }
 
     public function seeInCurrentUrl($uri)
@@ -1089,7 +1101,7 @@ class WebDriver extends CodeceptionModule implements
         // partially matching
         foreach ($option as $opt) {
             try {
-                $optElement = $el->findElement(WebDriverBy::xpath('//option [contains (., "' . $opt . '")]'));
+                $optElement = $el->findElement(WebDriverBy::xpath('.//option [contains (., "' . $opt . '")]'));
                 $matched = true;
                 if (!$optElement->isSelected()) {
                     $optElement->click();
