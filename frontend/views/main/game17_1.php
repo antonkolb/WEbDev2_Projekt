@@ -8,6 +8,8 @@ use yii\bootstrap\ActiveForm;
 
 //custom CSS
 $this->registerCssFile(Yii::$app->request->baseUrl.'/css/game.css');
+//custom JS, is depending on jQuery
+$this->registerJsFile(Yii::$app->request->baseUrl.'/js/game.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 
 $this->title = 'Spiel 1';
 $this->params['breadcrumbs'][] = $this->title;
@@ -46,7 +48,7 @@ for( $i=1; $i <= $model->numEx; $i++ ) {
 	$out .= " = ";
 	$out .= "</div>";
 	//this syncs the textfield with the model value: anything written in it will be saved in model, if the value is not empty it will be placed in the textbox
-	$out .= $form->field($model, "userAnswer[$i]")->label(false);
+	$out .= $form->field($model, "userAnswer[$i]")->label(false)->textInput(['class'=>'integerForm', 'data-bv-integer-message'=>'Bitte nur Zahlen eingeben', 'maxlength'=>2, 'style'=>'width:100px']);
 }
 
 $out .= "<div class=\"form-group\">";
