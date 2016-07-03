@@ -7,7 +7,7 @@ class m160702_201023_init_tt_table extends Migration
     public function up()
     {
       $this->createTable(
-      'tt',['id'=>'pk','name'=>'string uniqe','hurly'=>'integer',]
+      'tt',['id'=>'int pimarykey','name'=>'string uniqe','hurly'=>'integer',]
        );
     }
 
