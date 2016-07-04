@@ -68,7 +68,25 @@ class MainController extends AbstractController{
      */
     public function actionGame17_2()
     {
-		return "Aufgabe 2";
+		$model = new Game17_1();
+		$model->initGame(1, 4);
+		
+		if (isset($_POST['back'])){
+			return $this->goBack();
+		}
+		//pressed Check Button AND each field is valid?
+		else if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+			$model->commited = 'true';
+			return $this->render ( 'game17_2_check', ['model' => $model] );
+		}
+		//already pressed check once? NOT WORKING
+		else if ( $model->commited == 'true' ){
+			return "commited";
+		}
+		//render the game site
+		else{
+			return $this->render('game17_2', ['model' => $model]);
+		}
     }
 
     /**
