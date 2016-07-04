@@ -147,6 +147,12 @@ class MainController extends AbstractController{
 
 	//wird vll gebraucht um die Spiele in db abzuspeichern
 	private function saveGame17_1(){
+	$customer_record = new CustomerRecord();
+                $customer_record->name = $customer->name;
+                $customer_record->birth_date = $customer->birth_date->format('Y-
+m-d');
+                $customer_record->notes = $customer->notes;
+                $customer_record->save();
 	}
 	private function saveGame17_2(){
 	}
