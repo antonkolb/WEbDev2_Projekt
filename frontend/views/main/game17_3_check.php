@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Html;
 
-		$this->title = 'Einfache Rechenaufgaben';
+		$this->title = 'Zahlenmauern';
 		$this->params['breadcrumbs'][] = $this->title;
 
 		//alle werte vom model rein, die noch gebraucht werden, sonst sind diese leer!

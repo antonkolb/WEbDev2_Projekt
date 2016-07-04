@@ -15,3 +15,7 @@ chmod 777 frontend/runtime
 
 #migrate with database
 ./yii migrate
+
+alias cept="vendor/bin/codecept"
+
+)

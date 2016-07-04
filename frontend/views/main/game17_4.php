@@ -1,7 +1,7 @@
 <?php
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \frontend\models\main\Game17_2 */
+/* @var $model \frontend\models\main\Game17_1 */
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
@@ -11,10 +11,10 @@ $this->registerCssFile(Yii::$app->request->baseUrl.'/css/game.css');
 //custom JS, is depending on jQuery
 $this->registerJsFile(Yii::$app->request->baseUrl.'/js/game.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 
-$this->title = 'Textaufgaben';
+$this->title = 'Zahlenreihen';
 $this->params['breadcrumbs'][] = $this->title;
 
-$form = ActiveForm::begin(['id' => 'game17_2']);
+$form = ActiveForm::begin(['id' => 'game17_1']);
 
 //alle werte vom model rein, die noch gebraucht werden, sonst sind diese leer!
 $out="";
