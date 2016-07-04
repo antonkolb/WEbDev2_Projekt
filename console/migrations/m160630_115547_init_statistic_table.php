@@ -15,7 +15,7 @@ class m160630_115547_init_statistic_table extends Migration
            'userAnswer' => 'string',
            'amountOfTries' => 'time',
            'elapsedTime' => 'time',
-           'pk(userid,gameKat,game)',
+           'PRIMARY KEY(userid,gameKat,game)',
       ]
      );
     }
