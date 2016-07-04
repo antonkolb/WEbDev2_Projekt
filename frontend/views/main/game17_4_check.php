@@ -1,14 +1,14 @@
 <?php
 use yii\helpers\Html;
 
-		$this->title = 'Einfache Rechenaufgaben';
+		$this->title = 'Zahlenreihen';
 		$this->params['breadcrumbs'][] = $this->title;
 
 		//alle werte vom model rein, die noch gebraucht werden, sonst sind diese leer!
 		$out="";
 		$out .= Html::activeHiddenInput($model,"numEx");
 		$out .= "\n";
-		$out .= Html::activeHiddenInput($model,"level");
+		$out .= Html::activeHiddenInput($model,"difficulty");
 		$out .= "\n";
 		$out .= Html::activeHiddenInput($model,"commited");
 		$out .= "\n";

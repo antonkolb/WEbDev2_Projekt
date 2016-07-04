@@ -15,7 +15,7 @@ $this->registerCssFile(Yii::$app->request->baseUrl.'/css/main.css');
         <p class="lead">Spiel 1: Einfache Rechenaufgaben</p>
         <p class="lead">Spiel 2: Textaufgaben</p>
         <p class="lead">Spiel 3: Zahlenmauern</p>
-        <p class="lead">Spiel 4: Zahlenreihe</p>
+        <p class="lead">Spiel 4: Zahlenreihen</p>
 
 		<p><a class="btn btn-md btn-info gamebtn" href="main/game17_1">Spiel 1</a>
 		   <a class="btn btn-md btn-info gamebtn" href="main/game17_2">Spiel 2</a>

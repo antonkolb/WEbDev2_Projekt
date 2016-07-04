@@ -11,7 +11,7 @@ $this->registerCssFile(Yii::$app->request->baseUrl.'/css/game.css');
 //custom JS, is depending on jQuery
 $this->registerJsFile(Yii::$app->request->baseUrl.'/js/game.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 
-$this->title = 'Einfache Rechenaufgaben';
+$this->title = 'Zahlenreihen';
 $this->params['breadcrumbs'][] = $this->title;
 
 $form = ActiveForm::begin(['id' => 'game17_1']);
@@ -20,7 +20,7 @@ $form = ActiveForm::begin(['id' => 'game17_1']);
 $out="";
 $out .= Html::activeHiddenInput($model,"numEx");
 $out .= "\n";
-$out .= Html::activeHiddenInput($model,"level");
+$out .= Html::activeHiddenInput($model,"difficulty");
 $out .= "\n";
 $out .= Html::activeHiddenInput($model,"commited");
 $out .= "\n";

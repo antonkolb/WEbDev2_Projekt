@@ -11,7 +11,7 @@ $this->registerCssFile(Yii::$app->request->baseUrl.'/css/game.css');
 //custom JS, is depending on jQuery
 $this->registerJsFile(Yii::$app->request->baseUrl.'/js/game.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 
-$this->title = 'Spiel 2';
+$this->title = 'Textaufgaben';
 $this->params['breadcrumbs'][] = $this->title;
 
 $form = ActiveForm::begin(['id' => 'game17_2']);
