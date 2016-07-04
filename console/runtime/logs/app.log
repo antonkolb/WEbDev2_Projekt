@@ -428,3 +428,1431 @@ Stack trace:
     ]
     'argc' => 3
 ]
+2016-06-29 12:59:30 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-06-29 12:59:30 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-YQWtp5/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-2YwvXZ/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-eqaSrP/org.x:0'
+    '_' => './yii'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467197970.0546
+    'REQUEST_TIME' => 1467197970
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-06-29 13:29:38 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-06-29 13:29:38 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-YQWtp5/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-2YwvXZ/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-eqaSrP/org.x:0'
+    '_' => './yii'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467199778.7958
+    'REQUEST_TIME' => 1467199778
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-06-29 13:30:35 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-06-29 13:30:35 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-YQWtp5/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-2YwvXZ/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-eqaSrP/org.x:0'
+    '_' => './yii'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467199835.0626
+    'REQUEST_TIME' => 1467199835
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-06-29 13:32:53 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-06-29 13:32:53 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-YQWtp5/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-2YwvXZ/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-eqaSrP/org.x:0'
+    '_' => './yii'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467199973.6656
+    'REQUEST_TIME' => 1467199973
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-06-30 10:38:34 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-06-30 10:38:34 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Xe0QOI/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-Y8EIbq/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-eL68o1/org.x:0'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467275914.9461
+    'REQUEST_TIME' => 1467275914
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-06-30 10:39:42 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-06-30 10:39:42 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Xe0QOI/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-Y8EIbq/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-eL68o1/org.x:0'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467275982.1699
+    'REQUEST_TIME' => 1467275982
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-06-30 10:51:13 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-06-30 10:51:12 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Xe0QOI/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-Y8EIbq/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-eL68o1/org.x:0'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467276672.9855
+    'REQUEST_TIME' => 1467276672
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-06-30 11:18:01 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-06-30 11:18:01 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Xe0QOI/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-Y8EIbq/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-eL68o1/org.x:0'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467278281.1244
+    'REQUEST_TIME' => 1467278281
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-06-30 11:27:47 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-06-30 11:27:47 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Xe0QOI/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-Y8EIbq/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-eL68o1/org.x:0'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467278867.5763
+    'REQUEST_TIME' => 1467278867
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-07-02 22:06:46 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-07-02 22:06:46 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-lAEM3W/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-cnG8NL/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-oDCGla/org.x:0'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467490006.622
+    'REQUEST_TIME' => 1467490006
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-07-02 22:09:26 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-07-02 22:09:26 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-lAEM3W/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-cnG8NL/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-oDCGla/org.x:0'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467490166.195
+    'REQUEST_TIME' => 1467490166
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-07-02 22:14:20 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-07-02 22:14:20 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-lAEM3W/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-cnG8NL/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-oDCGla/org.x:0'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467490460.5101
+    'REQUEST_TIME' => 1467490460
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-07-02 22:16:05 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-07-02 22:16:05 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-lAEM3W/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-cnG8NL/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-oDCGla/org.x:0'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467490565.6055
+    'REQUEST_TIME' => 1467490565
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-07-02 22:19:09 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-07-02 22:19:09 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-lAEM3W/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-cnG8NL/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-oDCGla/org.x:0'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467490749.8033
+    'REQUEST_TIME' => 1467490749
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-07-02 22:21:00 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-07-02 22:21:00 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-lAEM3W/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-cnG8NL/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-oDCGla/org.x:0'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467490860.8314
+    'REQUEST_TIME' => 1467490860
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-07-02 22:35:08 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-07-02 22:35:08 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-lAEM3W/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-cnG8NL/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-oDCGla/org.x:0'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467491708.8193
+    'REQUEST_TIME' => 1467491708
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-07-02 22:51:13 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'team-17', 'qWqqsG8VCXmN3Za...', NULL)
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(861): yii\db\Connection->open()
+#1 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/db/Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#16 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/christianpohlmann/Documents/webdevGit/WebdevGit/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-07-02 22:51:13 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/rg/rgohVx4eF1CDqYwsLDDbT++++TI/-Tmp-/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-lAEM3W/Render'
+    'TERM_PROGRAM_VERSION' => '273.1'
+    'OLDPWD' => '/Users/christianpohlmann'
+    'USER' => 'christianpohlmann'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/tmp/launch-cnG8NL/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0:3'
+    'PATH' => '/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin'
+    'PWD' => '/Users/christianpohlmann/Documents/webdevGit/WebdevGit'
+    'LANG' => 'de_DE.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/christianpohlmann'
+    'LOGNAME' => 'christianpohlmann'
+    'DISPLAY' => '/tmp/launch-oDCGla/org.x:0'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1467492673.2149
+    'REQUEST_TIME' => 1467492673
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
