@@ -8,7 +8,7 @@ use yii\helpers\Html;
 		$out="";
 		$out .= Html::activeHiddenInput($model,"numEx");
 		$out .= "\n";
-		$out .= Html::activeHiddenInput($model,"difficulty");
+		$out .= Html::activeHiddenInput($model,"level");
 		$out .= "\n";
 		$out .= Html::activeHiddenInput($model,"commited");
 		$out .= "\n";
