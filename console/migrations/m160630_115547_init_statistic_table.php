@@ -9,13 +9,13 @@ class m160630_115547_init_statistic_table extends Migration
      $this->createTable(
           'statistic',
      [
-           'userid' => 'pk',
-           'username' => 'pk',
-           'gameKat' =>  'pk',
-           'game'=> 'pk',
+           'userid' => 'varchar(6) not null',
+           'gameKat' =>  'varchar(32) not null',
+           'game'=> 'varchar(32) not null',
            'userAnswer' => 'string',
            'amountOfTries' => 'time',
            'elapsedTime' => 'time',
+           'pk(userid,gameKat,game)',
       ]
      );
     }
