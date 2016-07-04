@@ -7,13 +7,13 @@ class m160702_201023_init_tt_table extends Migration
     public function up()
     {
       $this->createTable(
-      'tt',['id'=>'int pimarykey','name'=>'string uniqe','hurly'=>'integer',]
+      'tt',['id'=>'pk', 'name'=>'string uniqe', 'hurly'=>'integer',]
        );
     }
 
     public function down()
     {
-        $this->dropTable('test');
+        $this->dropTable('tt');
         echo "m160702_201023_init_tt_table cannot be reverted.\n";
 
         return false;
