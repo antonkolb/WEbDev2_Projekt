@@ -1,0 +1,10 @@
+diff a/doc/Gesamtdokumentation.docx b/doc/Gesamtdokumentation.docx	(rejected hunks)
+@@ -136,7 +136,7 @@
+ 2.6.3.1 Vorteile
+ Symfony ist als stabiles, robustes, aber vor allem sehr modulares Framework bekannt. Es ist aus Komponenten zusammengesetzt, welche ausgetauscht werden können. Das macht das Framework sehr flexibel und anpassbar.
+ 2.6.3.2 Nachteile
+-Nicht unbedingt simple oder ausgelegt für Rapid Development. Anpassbarkeit macht einiges an Konfiguration nötig. Die Einarbeitungszeit ist nicht besonders niedrig bzw. angemessen für den Funktionsumfang.
++Nicht unbedingt simpel oder ausgelegt für Rapid Development. Anpassbarkeit macht einiges an Konfiguration nötig. Die Einarbeitungszeit ist nicht besonders niedrig bzw. angemessen für den Funktionsumfang.
+ 
+ 2.6.4 Laravel 5
+ Laravel ist ein relativ junges, auf Symfony basierendes, leicht zugängliches Framework. Seit Anfang 2012 erscheinen regelmäßig Releases (aktuell ca. 2 pro Monat), aktuelle Commits sind auf Github. Der erste LTS-Release war im Juni 2015. Das Projekt wird von einem einzelnen Entwickler verwaltet und gepflegt, Features werden über Githubs Pull-Request-System von beliebigen Entwicklern eingereicht. Laravel wird bisher noch nicht in großen Unternehmen eingesetzt, es ist eher beliebt bei kleineren Unternehmen und Privatpersonen. Es existiert eine Dokumentation, welche die Installation und Einrichtung, Architektur und Einsatz der Features abdeckt. s existiert außerdem ein kostenpflichtiges Angebot für professionelle Videotutorial-Serien. Auf Stackoverflow lassen sich 35000 Fragen zum Tag 'Laravel' bzw. 6000 Fragen zu 'Laravel 5' finden.
