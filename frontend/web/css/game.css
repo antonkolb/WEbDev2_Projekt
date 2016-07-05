@@ -51,6 +51,9 @@
 	padding: 8px 10px;
 	text-align: center;
 }
+.pyramid-cell .help-block {
+	display: none;
+}
 .pyramid-cell:not(:nth-last-child(2)) {
 	border-right-style: none;
 }
@@ -66,6 +69,7 @@
 	text-align: center;
 }
 .pyramid-top {
+	position: relative;
 	margin-top: 30px;
 	padding-left: 80px;
 }
@@ -74,4 +78,11 @@
 }
 .pyramid-bottom {
 	margin-bottom: 40px;
+}
+.pyramid-top .pyramid-cell .help-block {
+	display: block;
+	width: 300px;
+	position: absolute;
+	top: -30px;
+	left: -20px;
 }

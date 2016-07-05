@@ -16,18 +16,30 @@ class Pyramid {
 	public $sum;
 	
 	public function __construct($maxNumber) {
+		$signs = array(true, true);
 		// check arguments
 		if ($maxNumber < 4) {
 			throw new InvalidArgumentException("maxNumber cannot be smaller than 4!");
 		}
-		// a + b = x
-		$xCalc = new Calculation(array(true, true), $maxNumber/2);
-		// b + c = y
-		$yCalc = new Calculation(array(true, true), $maxNumber - $xCalc->getSum(), $xCalc->getSummands()[0]);
-		// x + y = sum
+		// frist calc will be either left or right
+		$calc = new Calculation($signs, $maxNumber/2);
+		
+		// if first was left side, create right: b + c = y
+		$calcRight = new Calculation($signs, $maxNumber - $calc->getSum(), $calc->getSummands()[1]);
+		
+		// if first was right side, create left: b + a = x
+		$calcLeft = new Calculation($signs, $maxNumber - $calc->getSum(), $calc->getSummands()[0]);
+		// but summands are wrong -> swap first and second summand
+		Calculation::rearrangeForSummand(0, $calcLeft);// => x - b = a
+		Calculation::rearrangeForSummand(1, $calcLeft);// => x - a = b
+		Calculation::rearrangeForSummand(0, $calcLeft);// => b + a = x
+		
+		// choose random if first is left or right
 		$switch = mt_rand(0, 1) == 1;
-		$this->xCalc = $switch ? $xCalc : $yCalc;
-		$this->yCalc = $switch ? $yCalc : $xCalc;
-		$this->sum = $xCalc->getSum() +  $yCalc->getSum();
+		// determine the needed side and set it
+		$this->xCalc = $switch ? $calc : $calcLeft;
+		$this->yCalc = $switch ? $calcRight : $calc;
+		// sum
+		$this->sum = $this->xCalc->getSum() + $this->yCalc->getSum();
 	}
 }

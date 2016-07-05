@@ -20,10 +20,12 @@ class Calculation {
 	 * drastically make this calculation harder to solve!
 	 */
 	public static function rearrangeForSummand($summandIndex, Calculation $calc) {
-		if ($summand > 0) {
+		if ($calc->summands[$summandIndex] > 0) {
 			// invert other summands
 			foreach ($calc->summands as $otherIndex => $otherSummand) {
-				$calc->summands[$otherIndex] = $otherSummand * (-1);
+				if ($otherIndex != $summandIndex) {
+					$calc->summands[$otherIndex] = $otherSummand * (-1);
+				}
 			}
 		} else {
 			// invert summand and sum

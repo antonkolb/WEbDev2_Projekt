@@ -23,23 +23,28 @@ $textInputOptions = [
 		'style'=>'width:60px'
 ];
 
+$answerIndex = 0;
 $out="";
 for ($i = 0; $i < $model->numEx; $i++) {
+	$sum = $answerIndex++;
+	$x = $answerIndex++;
+	$y = $answerIndex++;
+	
 	$exerciseNum = $i + 1;
 	$out .= "<h3 class='aufgabennummer'>Aufgabe $exerciseNum</h3>\n"
 	.'<div class="aufgabenstellung">'
 		."<div class='pyramid-row pyramid-top'>"
 			."<div class='pyramid-cell pyramid-top-cell'>"
-				.$form->field($model, "userAnswers[$i]['sum']")->label(false)->textInput($textInputOptions)
+				.$form->field($model, "userAnswers[$sum]")->label(false)->textInput($textInputOptions)
 			."</div>"
 			."<div class='clear'></div>"
 		."</div>"
 		."<div class='pyramid-row pyramid-middle'>"
 			."<div class='pyramid-cell pyramid-middle-cell'>"
-				.$form->field($model, "userAnswers[$i]['x']")->label(false)->textInput($textInputOptions)
+				.$form->field($model, "userAnswers[$x]")->label(false)->textInput($textInputOptions)
 			."</div>"
 			."<div class='pyramid-cell pyramid-middle-cell'>"
-				.$form->field($model, "userAnswers[$i]['y']")->label(false)->textInput($textInputOptions)
+				.$form->field($model, "userAnswers[$y]")->label(false)->textInput($textInputOptions)
 			."</div>"
 			."<div class='clear'></div>"
 		."</div>"
@@ -59,7 +64,7 @@ for ($i = 0; $i < $model->numEx; $i++) {
 }
 
 $out .= "<div class=\"form-group\">";
-$out .= Html::submitButton('Korrigieren', ['name'=>'check', 'class' => 'btn btn-primary lowbtn']);
+$out .= Html::submitButton('Korrigieren', ['name'=>'answers', 'class' => 'btn btn-primary lowbtn']);
 $out .= Html::submitButton('Zur&uuml;ck', ['name'=>'back', 'class' => 'btn btn-primary lowbtn']); 
 $out .= "</div>";
 
