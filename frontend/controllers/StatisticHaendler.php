@@ -22,7 +22,6 @@ class StatisticHaendler extends Modle
 		// return "customer / index";
 	}
 	
-	public function insertValues(id, )
 	public function actionAdd()
 	{
 		
