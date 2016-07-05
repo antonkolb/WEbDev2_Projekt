@@ -9,7 +9,7 @@ use \yii\data\ArrayDataProvider;
 use \yii\web\Controller;
 use frontend\models\customer\StatisticRecord;
 use frontend\models\customer\Statistic;
-
+use yii\base\Model;
 
 class StatisticHaendler extends Model
 {
