@@ -9,7 +9,7 @@ use \yii\data\ArrayDataProvider;
 use \yii\web\Controller;
 
 
-class StatisticHaendler extends Modle
+class StatisticHaendler extends Model
 {
 	
 	
