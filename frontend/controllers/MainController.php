@@ -65,6 +65,11 @@ class MainController extends AbstractController{
 		$model->initGame(1, 4);
 		return $this->render('test', ['model' => $model]);
 	}
+    publci function debTest(){
+	$statistic = new StatisticHaendler();
+		$statistic->makeStatistic();
+		
+	}
 	
     /**
      * @return string - View der Aufgabe
