@@ -22,8 +22,8 @@ class Game17_3 extends AbstractGame {
 	 */
 	public function initGame($level = 1, $numOfExercises = 2) {
 		parent::initGame($level, $numOfExercises);
-		for($i = 0; $i < $numOfExercises; $i++) {
-			$maxNumber = $this->maxNumPerLevel[$level - 1];
+		for($i = 0; $i < $this->numEx; $i++) {
+			$maxNumber = $this->maxNumPerLevel[$this->level - 1];
 			array_push($this->pyramids, new Pyramid($maxNumber));
 		}
 	}
@@ -32,7 +32,7 @@ class Game17_3 extends AbstractGame {
 	 * {@inheritDoc}
 	 * @see \frontend\models\main\IBasicGame::verifyAnswers()
 	 */
-	public function verifyAnswers(){
+	public function verifyAnswers() {
 		$userAnswers = $this->userAnswers;
 		$feedback = "";
 		$answerIndex = 0;

@@ -7,6 +7,7 @@ use frontend\controllers\AbstractController;
 use frontend\models\main\Game17_1;
 use frontend\models\main\Game17_2;
 use frontend\models\main\Game17_3;
+use frontend\models\main\Game17_4;
 use frontend\models\main\AbstractGame;
 
 class MainController extends AbstractController{
@@ -56,7 +57,7 @@ class MainController extends AbstractController{
     public function actionGame17_4() {
     	$name = "game17_4";
     	$createGame = function () {
-    		$game = new Game17_1();
+    		$game = new Game17_4();
     		$game->initGame(1, 4);
     		return $game;
     	};

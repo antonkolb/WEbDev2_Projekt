@@ -63,13 +63,15 @@ class Calculation {
 	
 	/**
 	 * Generates summands and sum. Number of summands inferred from length of given array.
+	 * Garantees that, when solving from left to right, the subtotal at any time will be
+	 * above zero and positive.
 	 * 
 	 * @param bool[] $summandIsPositive - an array that indicates for each summand if that
 	 * 		summand should be positive or negative. If you pass [true, false true], the 
 	 * 		calculation will be: x - y + z = sum. First summand must be positive.
 	 * 
 	 * @param int $maxNumber - maximum number the kids need to calculate with when solving
-	 * 		this calculation.
+	 * 		this calculation. Subtotals from left to right will never be higher than this.
 	 * 
 	 * @param int $firstSummand - Specify this only if you want to set the first summand.
 	 * 		0 means not specified (random summand like all other summands).
@@ -164,3 +166,5 @@ class Calculation {
 		return $room;
 	}
 }
+
+?>
