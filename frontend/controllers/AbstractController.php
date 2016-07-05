@@ -21,7 +21,7 @@ abstract class AbstractController extends Controller
 {
 	/**
      * @inheritdoc
-	 * requires to be logged in to see al inheritet Controlelrs/functions
+	 * requires to be logged in to see al inherited Controllers/functions
 	 * see for more information: http://stackoverflow.com/questions/30067849/yii2-require-all-controller-and-action-to-login
      */
 	public function behaviors()

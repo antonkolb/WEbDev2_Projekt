@@ -16,30 +16,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
 $form = ActiveForm::begin(['id' => 'game17_1']);
 
-//alle werte vom model rein, die noch gebraucht werden, sonst sind diese leer!
 $out="";
-$out .= Html::activeHiddenInput($model,"numEx");
-$out .= "\n";
-$out .= Html::activeHiddenInput($model,"level");
-$out .= "\n";
-$out .= Html::activeHiddenInput($model,"commited");
-$out .= "\n";
-$out .= Html::activeHiddenInput($model,"started");
-$out .= "\n";
-
-
 for( $i=1; $i <= $model->numEx; $i++ ) {
-	$out .= "\n";
-	$out .= Html::activeHiddenInput($model,"number1[$i]");
-	$out .= "\n";
-	$out .= Html::activeHiddenInput($model,"number2[$i]");
-	$out .= "\n";
-	$out .= Html::activeHiddenInput($model,"sum[$i]");
-	$out .= "\n";
-	$out .= Html::activeHiddenInput($model,"correctAnswer[$i]");
-	$out .= "\n";
-
-	//hier beginnt die eigentliche Aufgabe
+	
 	$out .= "<h3>Aufgabe $i</h3>\n";
 	$out .= '<div class="aufgabenstellung">';
 	$out .= $model->number1[$i]; 
@@ -52,7 +31,7 @@ for( $i=1; $i <= $model->numEx; $i++ ) {
 }
 
 $out .= "<div class=\"form-group\">";
-$out .= Html::submitButton('Korrigieren', ['name'=>'check', 'class' => 'btn btn-primary lowbtn']);
+$out .= Html::submitButton('Korrigieren', ['name'=>'answers', 'class' => 'btn btn-primary lowbtn']);
 $out .= Html::submitButton('Zur&uuml;ck', ['name'=>'back', 'class' => 'btn btn-primary lowbtn']); 
 $out .= "</div>";
 
