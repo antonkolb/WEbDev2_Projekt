@@ -7,7 +7,8 @@ use frontend\models\customer\Phone;
 use frontend\models\customer\PhoneRecord;
 use \yii\data\ArrayDataProvider;
 use \yii\web\Controller;
-use \yii\web\Model;
+use frontend\models\customer\StatisticRecord;
+use frontend\models\customer\Statistic;
 
 
 class StatisticHaendler extends Model
