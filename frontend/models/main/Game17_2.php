@@ -21,12 +21,16 @@ class Game17_2 extends AbstractGame {
 	// calcs needed for verification
 	protected $calcs;
 	
-	// data needed to display calculation
+	// text displyed as exercise
 	public $calcTexts = array();
 	
 	// user answers will be in here after submit
 	public $userAnswers = array();
 	
+	/**
+	 * {@inheritDoc}
+	 * @see \frontend\models\main\AbstractGame::initGame()
+	 */
     public function initGame($level = 1, $numOfExercises = 3) {
     	parent::initGame($level, $numOfExercises);
     	$calcs = $this->initCalculations($this->level, $this->numEx);
@@ -83,7 +87,7 @@ class Game17_2 extends AbstractGame {
 					."$summands[1] Freund[e]. Wie viele hat sie danach noch?";
 		case 3;
 			return "Klein Kevin hat in der Schule $summands[0] Buchstabe[n] gelernt. Beim Zocken "
-					."vergisst er jedoch wieder $summands[1] Buchstabe[n]. Am nächsten Tag lernt "
+					."vergisst er jedoch wieder $summands[1] Buchstabe[n]. Am nï¿½chsten Tag lernt "
 					."er $summands[2] komplett neue[n] Buchstaben. Wie viele Buchstaben kann "
 					."Klein Kevin dann?";
 		default:
@@ -91,17 +95,21 @@ class Game17_2 extends AbstractGame {
 		}
 	}
 	
+	/**
+	 * {@inheritDoc}
+	 * @see \frontend\models\main\IBasicGame::verifyAnswers()
+	 */
 	public function verifyAnswers(){
 		$feedback = "";
 		for ($i = 0; $i < $this->numEx; $i++) {
 			$userSum = $this->userAnswers[$i];
 			$calc = $this->calcs[$i];
-			$feedback .= $this->checkAnswer($userSum, $calc, $this->level);
+			$feedback .= $this->verifyAnswer($userSum, $calc, $this->level);
 		}
 		return $feedback;
 	}
 	
-	protected function checkAnswer($userSum, Calculation $calc, $level) {
+	protected function verifyAnswer($userSum, Calculation $calc, $level) {
 		$correctSum = $calc->getSum();
 		if($correctSum == $userSum) {
 			switch($level) {

@@ -18,7 +18,7 @@ $form = ActiveForm::begin(['id' => 'game17_2']);
 
 $out="";
 
-for ($i = 0; $i < $model->numEx; $i++) {	
+for ($i = 0; $i < $model->numEx; $i++) {
 	//hier beginnt die eigentliche Aufgabe
 	$numExercise = $i + 1;
 	
