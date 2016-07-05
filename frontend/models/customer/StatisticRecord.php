@@ -21,10 +21,12 @@ class StatisticRecord extends ActiveRecord {
 	public function rules() {
 		return [
 			['id', 'number'],
-			['name', 'required'],
-			['name', 'string', 'max' => 256],
-			['birth_date', 'date', 'format' => 'Y-m-d'],
-			['notes', 'safe']
+			['gameKat', 'string'],
+			['game', 'string', 'max' => 100],
+            ['game', 'string', 'max' => 100],
+            ['userAnswer', 'string', 'max' => 100],
+            ['amoutOfTries', 'string', 'max' => 100],
+            ['elapsedTime', 'string', 'max' => 10]
 		];
 	}
 }
