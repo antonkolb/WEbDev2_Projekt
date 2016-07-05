@@ -20,7 +20,7 @@ $textInputOptions = [
 		'class'=>'integerForm',
 		'data-bv-integer-message'=>'Bitte nur Zahlen eingeben',
 		'maxlength'=>2,
-		'style'=>'width:60px'
+		'style'=>'width:1em'
 ];
 
 $answerIndex = 0;
