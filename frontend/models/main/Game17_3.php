@@ -14,6 +14,9 @@ class Game17_3 extends AbstractGame {
 	
 	public $pyramids = array();
 	
+	// user answers will be in here after submit
+	public $userAnswers = array();
+	
 	/**
 	 * {@inheritDoc}
 	 * @see \frontend\models\main\AbstractGame::initGame()
@@ -37,7 +40,7 @@ class Game17_3 extends AbstractGame {
 	public function rules() {
 		return [
 				['userAnswers', 'each', 'rule' => ['required']],
-				['userAnswers', 'each', 'rule' => ['integer']]
+// 				['userAnswers', 'each', 'rule' => ['integer']]
 		];
 	}
 }

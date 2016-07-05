@@ -16,17 +16,46 @@ $this->params['breadcrumbs'][] = $this->title;
 
 $form = ActiveForm::begin(['id' => 'game17_1']);
 
+$textInputOptions = [
+		'class'=>'integerForm',
+		'data-bv-integer-message'=>'Bitte nur Zahlen eingeben',
+		'maxlength'=>2,
+		'style'=>'width:60px'
+];
+
 $out="";
-
-for( $i=1; $i <= $model->numEx; $i++ ) {
-
-	//hier beginnt die eigentliche Aufgabe
-	$out .= "<h3>Aufgabe $i</h3>\n";
-	$out .= '<div class="aufgabenstellung">';
-	$out .= "Pyramide";
-	$out .= "</div>";
-	//this syncs the textfield with the model value: anything written in it will be saved in model, if the value is not empty it will be placed in the textbox
-// 	$out .= $form->field($model, "userAnswer[$i]")->label(false)->textInput(['class'=>'integerForm', 'data-bv-integer-message'=>'Bitte nur Zahlen eingeben', 'maxlength'=>2, 'style'=>'width:100px']);
+for ($i = 0; $i < $model->numEx; $i++) {
+	$exerciseNum = $i + 1;
+	$out .= "<h3 class='aufgabennummer'>Aufgabe $exerciseNum</h3>\n"
+	.'<div class="aufgabenstellung">'
+		."<div class='pyramid-row pyramid-top'>"
+			."<div class='pyramid-cell pyramid-top-cell'>"
+				.$form->field($model, "userAnswers[$i]['sum']")->label(false)->textInput($textInputOptions)
+			."</div>"
+			."<div class='clear'></div>"
+		."</div>"
+		."<div class='pyramid-row pyramid-middle'>"
+			."<div class='pyramid-cell pyramid-middle-cell'>"
+				.$form->field($model, "userAnswers[$i]['x']")->label(false)->textInput($textInputOptions)
+			."</div>"
+			."<div class='pyramid-cell pyramid-middle-cell'>"
+				.$form->field($model, "userAnswers[$i]['y']")->label(false)->textInput($textInputOptions)
+			."</div>"
+			."<div class='clear'></div>"
+		."</div>"
+		."<div class='pyramid-row pyramid-bottom'>"
+			."<div class='pyramid-cell pyramid-bottom-cell'>"
+				.$model->pyramids[$i]->xCalc->getSummands()[0]
+			."</div>"
+			."<div class='pyramid-cell pyramid-bottom-cell'>"
+				.$model->pyramids[$i]->xCalc->getSummands()[1]
+			."</div>"
+			."<div class='pyramid-cell pyramid-bottom-cell'>"
+				.$model->pyramids[$i]->yCalc->getSummands()[1]
+			."</div>"
+			."<div class='clear'></div>"
+		."</div>"
+	."</div>";
 }
 
 $out .= "<div class=\"form-group\">";

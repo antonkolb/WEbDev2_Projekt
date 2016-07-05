@@ -11,8 +11,9 @@ use InvalidArgumentException;
  */
 class Pyramid {
 	
-	protected $xCalc, $yCalc;
-	protected $sum;
+	public $xCalc;
+	public $yCalc;
+	public $sum;
 	
 	public function __construct($maxNumber) {
 		// check arguments

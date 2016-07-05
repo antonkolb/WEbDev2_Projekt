@@ -1,10 +1,11 @@
 <?php
 
-		$this->title = 'Zahlenmauern';
+		$this->title = 'Zahlenreihen';
 		$this->params['breadcrumbs'][] = $this->title;
 
 		$out="";
-		$out .= "<h3>Ergebnisse f&uuml;r Spiel 3</h3>";
+
+		$out .= "<h3>Ergebnisse f&uuml;r Spiel 1</h3>";
 		$out .= $model->checkAnswers();
 
 $out .= "</ul>";

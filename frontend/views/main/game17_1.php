@@ -19,15 +19,18 @@ $form = ActiveForm::begin(['id' => 'game17_1']);
 $out="";
 for( $i=1; $i <= $model->numEx; $i++ ) {
 	
-	$out .= "<h3>Aufgabe $i</h3>\n";
-	$out .= '<div class="aufgabenstellung">';
+	$out .= "<h3 class='aufgabennummer'>Aufgabe $i</h3>\n";
+	$out .= '<div class="aufgabenstellung game1-aufgabe">';
 	$out .= $model->number1[$i]; 
 	$out .= " + ";
 	$out .= $model->number2[$i];
 	$out .= " = ";
 	$out .= "</div>";
+	$out .= "<div class='game1-input'>";
 	//this syncs the textfield with the model value: anything written in it will be saved in model, if the value is not empty it will be placed in the textbox
 	$out .= $form->field($model, "userAnswer[$i]")->label(false)->textInput(['class'=>'integerForm', 'data-bv-integer-message'=>'Bitte nur Zahlen eingeben', 'maxlength'=>2, 'style'=>'width:100px']);
+	$out .= "</div>";
+	$out .= "<div class='clear'></div>";
 }
 
 $out .= "<div class=\"form-group\">";
