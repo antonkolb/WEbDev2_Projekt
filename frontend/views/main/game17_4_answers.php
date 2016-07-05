@@ -1,10 +1,10 @@
 <?php
 
-		$this->title = 'Textaufgaben';
+		$this->title = 'Zahlenreihen';
 		$this->params['breadcrumbs'][] = $this->title;
 
 		$out="";
-		$out .= "<h3>Ergebnisse f&uuml;r Spiel 2</h3>";
+		$out .= "<h3>Ergebnisse f&uuml;r Spiel 4</h3>";
 		$out .= $model->verifyAnswers();
 
 $out .= "</ul>";

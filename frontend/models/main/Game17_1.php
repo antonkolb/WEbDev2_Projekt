@@ -82,19 +82,7 @@ class Game17_1 extends AbstractGame {
 	public function rules(){
 	
 		return [
-				['number1', 'each', 'rule' => ['required']],
-				['number2', 'each', 'rule' => ['required']],
-				['sum', 'each', 'rule' => ['required']],
-				['correctAnswer', 'each', 'rule' => ['required']],
 				['userAnswer', 'each', 'rule' => ['required']],
-	
-				['numEx','required'],
-				['level','required'],
-	
-				['number1', 'each', 'rule' => ['integer']],
-				['number2', 'each', 'rule' => ['integer']],
-				['sum', 'each', 'rule' => ['integer']],
-				['correctAnswer', 'each', 'rule' => ['integer']],
 				['userAnswer', 'each', 'rule' => ['integer']],
 		];
 	}
