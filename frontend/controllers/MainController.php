@@ -14,7 +14,15 @@ class MainController extends AbstractController{
 
 	//Nur zum Testen
 	public function actionTest(){
-		 $statistic = new StatisticHaendler();
+		$id = '2';
+        $gameKat = 'tt';
+        $game = '1';
+        $userAnswere = 'Tu';
+        $amoutOfTries = '1';
+        $elapsedTime = new time(); 
+        
+        
+        $statistic = new StatisticHaendler($id,$gameKat,$game,$userAnswere,$amoutOfTries,$elapsedTime);
                 $statistic->makeStatistic();
 		return 'String';
 	}

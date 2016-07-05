@@ -13,7 +13,10 @@ use yii\base\Model;
 
 class StatisticHaendler extends Model
 {
-	
+	public function __construct($id,$gameKat,$userAnswer,$amoutOfTries,$elapsedTime) 
+    {
+        $this->makeStatistic($id,$gameKat,$userAnswer,$amoutOfTries,$elapsedTime);
+    }
 	
 
 	public function actionIndex()
@@ -102,16 +105,16 @@ class StatisticHaendler extends Model
 	}
 
 	//public function makeStatistic(StatisticRecord $statistic_record) {
-    public function makeStatistic() {
+    public function makeStatistic($id,$gameKat,$userAnswer,$amoutOfTries,$elapsedTime) {
 		
-		$statistic = new StatisticRecord();
-                $id = '2';
-                $gameKat = 'Kat';
-		        $game = '1';
-                $userAnswere = '1';
-                $amoutOfTries = '1';
-                $elapsedtime = '4';
-		$statistic = new StatisticRecord($id,$gameKat,$game,$userAnswere,$amoutOfTries,$elapsedtime);
+		$statistic = new StatisticRecord($id,$gameKat,$userAnswer,$amoutOfTries,$elapsedTime);
+                //$id = '2';
+                //$gameKat = 'Kat';
+		        //$game = '1';
+                //$userAnswere = '1';
+                //$amoutOfTries = '1';
+                //$elapsedtime = '4';
+		//$statistic = new StatisticRecord($id,$gameKat,$game,$userAnswere,$amoutOfTries,$elapsedtime);
 
 		$name = $customer_record->name;
 		$birth_date = new \DateTime($customer_record->birth_date);
