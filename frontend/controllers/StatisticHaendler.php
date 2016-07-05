@@ -32,7 +32,7 @@ class StatisticHaendler extends Model
 		$gameKat = 'tt';
 		$game = '1';
 		$userAnswere = 'Tu';
-		$amoutOfTries = new time();
+		$amoutOfTries = '1';
 		$elapsedTime = new time();
 		
 		if ($this->load($statistic, $_POST)) {
@@ -107,8 +107,11 @@ class StatisticHaendler extends Model
 		$statistic = new StatisticRecord();
                 $id = '2';
                 $gameKat = 'Kat';
-		$game = '1';
-		$statistic = new StatisticRecord($id,$gameKat,$game);
+		        $game = '1';
+                $userAnswere = '1';
+                $amoutOfTries = '1';
+                $elapsedtime = '4';
+		$statistic = new StatisticRecord($id,$gameKat,$game,$userAnswere,$amoutOfTries,$elapsedtime);
 
 		$name = $customer_record->name;
 		$birth_date = new \DateTime($customer_record->birth_date);
