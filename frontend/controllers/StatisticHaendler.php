@@ -36,7 +36,7 @@ class StatisticHaendler extends Model
 		$game = '1';
 		$userAnswere = 'Tu';
 		$amoutOfTries = '1';
-		$elapsedTime = new time();
+		$elapsedTime = '12.06.2016';
 		
 		if ($this->load($statistic, $_POST)) {
 				$this->store($this->makeStatistic($id, $gameKat, $game, $userAnswere, $amoutOfTries, $elapsedTime));

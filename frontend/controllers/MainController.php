@@ -19,7 +19,7 @@ class MainController extends AbstractController{
         $game = '1';
         $userAnswere = 'Tu';
         $amoutOfTries = '1';
-        $elapsedTime = new time(); 
+        $elapsedTime = '12.06.2016'; 
         
         
         $statistic = new StatisticHaendler($id,$gameKat,$game,$userAnswere,$amoutOfTries,$elapsedTime);
