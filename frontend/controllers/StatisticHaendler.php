@@ -35,7 +35,7 @@ class StatisticHaendler extends Modle
 		
 		if ($this->load($statistic, $_POST)) {
 				$this->store($this->makeStatistic($id, $gameKat, $game, $userAnswere, $amoutOfTries, $elapsedTime));
-i				return $this->redirect('/customer');
+            //return $this->redirect('/customer');
 		}
 		
 		return $this->render('add',compactmakeStatistic($id, $gameKat, $game, $userAnswere, $amoutOfTries, $elapsedTime));
