@@ -18,7 +18,7 @@ class MainController extends AbstractController{
 		$model->initGame(1, 4);
 		return $this->render('test', ['model' => $model]);
 	}
-    public function debTest(){
+    public function actionDTest(){
 	$statistic = new StatisticHaendler();
 		$statistic->makeStatistic();
 		
