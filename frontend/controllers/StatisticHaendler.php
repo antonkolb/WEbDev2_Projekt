@@ -101,7 +101,7 @@ class StatisticHaendler extends Model
 		}
 	}
 
-	private function makeStatistic(StatisticRecord $statistic_record) {
+	public function makeStatistic(StatisticRecord $statistic_record) {
 		
 		$statistic = new StatisticRecord();
                 $id = '2';
