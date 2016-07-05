@@ -14,14 +14,9 @@ class MainController extends AbstractController{
 
 	//Nur zum Testen
 	public function actionTest(){
-		$model = new Game17_1();
-		$model->initGame(1, 4);
-		return $this->render('test', ['model' => $model]);
-	}
-    public function actionDTest(){
-	$statistic = new StatisticHaendler();
-		$statistic->makeStatistic();
-		
+		 $statistic = new StatisticHaendler();
+                $statistic->makeStatistic();
+		return 'String';
 	}
 	
 	
