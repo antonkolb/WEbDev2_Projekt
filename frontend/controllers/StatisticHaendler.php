@@ -50,7 +50,7 @@ class StatisticHaendler extends Model
 		return $this->render('query');
 	}
 	
-	private function load(CustomerRecord $customer, PhoneRecord $phone, array $post)
+	public function load(CustomerRecord $customer, PhoneRecord $phone, array $post)
 	{
 		return $customer->load($post)
 			and $phone->load($post)
@@ -58,14 +58,14 @@ class StatisticHaendler extends Model
 			and $phone->validate(['number']);
 	}
 	
-	private function findRecordsByQuery(){
+	public function findRecordsByQuery(){
 		$number = Yii::$app->request->get('phone_number');
 		$records = $this->getRecordsByPhoneNumber($number);
 		$dataProvider = $this->wrapIntoDataProvider($records);
 		return $dataProvider;
 	}
 
-	private function wrapIntoDataProvider($data)
+	public function wrapIntoDataProvider($data)
 	{
 	   return new ArrayDataProvider([
 	           'allModels' => $data,
@@ -73,7 +73,7 @@ class StatisticHaendler extends Model
 	    ]); 
 	}
 	
-	private function getRecordsByPhoneNumber($number) {
+	public function getRecordsByPhoneNumber($number) {
 		$phone_record = PhoneRecord::findOne(['number' => $number]);
 		if (!$phone_record)
 			return [];
@@ -86,7 +86,7 @@ class StatisticHaendler extends Model
 	}
 
 	
-	private function store(Customer $customer) {
+	public function store(Customer $customer) {
 		$customer_record = new CustomerRecord();
 		$customer_record->name = $customer->name;
 		$customer_record->birth_date = $customer->birth_date->format('Y-m-d');
