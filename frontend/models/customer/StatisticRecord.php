@@ -26,7 +26,7 @@ class StatisticRecord extends ActiveRecord {
             ['game', 'string', 'max' => 100],
             ['userAnswer', 'string', 'max' => 100],
             ['amoutOfTries', 'string', 'max' => 100],
-            ['elapsedTime', 'string', 'max' => 10]
+            ['elapsedTime', 'string', 'max' => 10],
 		];
 	}
 }
