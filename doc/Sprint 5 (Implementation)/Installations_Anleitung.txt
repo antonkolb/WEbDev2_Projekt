@@ -1,0 +1,9 @@
+Abgabe
+Anmelden
+mkdir studienarbeit 
+git clone http://gittlab.hof-university.de/wd-team-17/WebDev2_Projekt.git studienarbeit //clont in ordner Studienarbeit
+cd studienarbeit
+export PATH="$PATH:." //. =dieser Ordner
+./install.sh  //Datie kein Befehl //führt yii Migration aus
+alias cept="vendor/bin/codecept" //variable für vendorordner
+cept run acceptance // führt alle acceptance Tests aus
