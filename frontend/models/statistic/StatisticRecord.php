@@ -1,6 +1,6 @@
 <?php
 
-namespace frontend\models\statistic;
+namespace frontend\models\customer;
 use yii\db\ActiveRecord;
 
 class StatisticRecord extends ActiveRecord {
@@ -29,7 +29,4 @@ class StatisticRecord extends ActiveRecord {
             ['elapsedTime', 'string', 'max' => 10],
 		];
 	}
-    public function save() {
-        
-    }
 }

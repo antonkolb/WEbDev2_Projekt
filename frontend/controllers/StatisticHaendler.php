@@ -89,19 +89,17 @@ class StatisticHaendler extends Model
 	}
 
 	
-	public function store(Customer $customer) {
-		$customer_record = new CustomerRecord();
-		$customer_record->name = $customer->name;
-		$customer_record->birth_date = $customer->birth_date->format('Y-m-d');
-		$customer_record->notes = $customer->notes;
-		$customer_record->save();
+	public function store(Statistic $stat) {
+		$statistic_record = new StatisticRecord();
+		$statistic_record->userid = $stat->userid;
+		$statistic_record->gameKat = $stat->gameKat;
+		$statistic_record->game = $stat->game;
+        $statistic_record->userAnswer = $stat->userAnswer;
+        $statistic_record->amoutOfTries = $stat->amoutOfTries;
+        $statistic_record->elapsedTime = $stat->elapsedTime;
+		$statistic_record->save();
 
-		foreach ($customer->phones as $phone) {
-			$phone_record = new PhoneRecord();
-			$phone_record->number = $phone->number;
-			$phone_record->customer_id = $customer_record->id;
-			$phone_record->save();
-		}
+		
 	}
 
 	//public function makeStatistic(StatisticRecord $statistic_record) {
