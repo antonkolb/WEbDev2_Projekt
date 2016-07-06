@@ -80,15 +80,15 @@ class Game17_2 extends AbstractGame {
 		$summands = $calc->getSummands();
 		switch ($level) {
 		case 1:
-			return "Peter hat $summands[0] Smartphone[s]. Sein Vater schenkt ihm "
-					."$summands[1] weitere[s]. Wie viele Smartphones hat Peter danach?";
+			return "Peter hat <span>$summands[0]</span> Smartphone[s]. Sein Vater schenkt ihm "
+					."<span>$summands[1]</span> weitere[s]. Wie viele Smartphones hat Peter danach?";
 		case 2:
-			return "Anja hat $summands[0] Freund[e] auf Facebook. Mit der Zeit verliert sie "
-					."$summands[1] Freund[e]. Wie viele hat sie danach noch?";
+			return "Anja hat <span>$summands[0]</span> Freund[e] auf Facebook. Mit der Zeit verliert sie "
+					."<span>$summands[1]</span> Freund[e]. Wie viele hat sie danach noch?";
 		case 3;
-			return "Klein Kevin hat in der Schule $summands[0] Buchstabe[n] gelernt. Beim Zocken "
-					."vergisst er jedoch wieder $summands[1] Buchstabe[n]. Am n�chsten Tag lernt "
-					."er $summands[2] komplett neue[n] Buchstaben. Wie viele Buchstaben kann "
+			return "Klein Kevin hat in der Schule <span>$summands[0]</span> Buchstabe[n] gelernt. Beim Zocken "
+					."vergisst er jedoch wieder <span>$summands[1]</span> Buchstabe[n]. Am nächsten Tag lernt "
+					."er <span>$summands[2]</span> komplett neue[n] Buchstaben. Wie viele Buchstaben kann "
 					."Klein Kevin dann?";
 		default:
 			throw new InvalidArgumentException("This game supports only level 1-3!");
