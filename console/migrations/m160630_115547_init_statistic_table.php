@@ -33,7 +33,6 @@ class m160630_115547_init_statistic_table extends Migration
     public function safeUp()
     {
     }
-
     public function safeDown()
     {
     }
