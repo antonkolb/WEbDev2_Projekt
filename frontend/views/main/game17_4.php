@@ -20,7 +20,7 @@ $textInputOptions = [
 		'class'=>'integerForm',
 		'data-bv-integer-message'=>'Bitte nur Zahlen eingeben',
 		'maxlength'=>2,
-		'style'=>'width:1em'
+		'style'=>'width:60px'
 ];
 
 $answerIndex = 0;
@@ -43,6 +43,7 @@ for ($i = 0; $i < $model->numEx; $i++) {
 		}
 		$out .= "</div>";
 	}
+	$out .= "<div class='clear'></div>";
 	$out .= "</div>";
 	$out .= "</div>";
 }
