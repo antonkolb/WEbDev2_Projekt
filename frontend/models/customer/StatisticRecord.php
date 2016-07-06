@@ -9,7 +9,7 @@ class StatisticRecord extends ActiveRecord {
 		return ['userid','gameKat',
         'game','userAnswer','amoutOfTries','elapsedTime',];
 	}
-        public static function update($userid, $gameKat,
+        public function update($userid, $gameKat,
                $game, $userAnswer, $amoutOfTries, $elapsedTime) {
                 $this->userid = $userid;
                 $this->gameKat = $gameKat;
