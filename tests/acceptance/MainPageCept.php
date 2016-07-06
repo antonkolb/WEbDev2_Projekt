@@ -49,7 +49,7 @@ $I->click('Spiel 1');
 $I->see('Einfache Rechenaufgaben');
 
 $I->wantTo('go back from game 1');
-$I->click('back');
+$I->click('button[name="back"]');
 $I->see('Wähle eine Aufgabe aus!');
 //================================
 $I->wantTo('go to game 2');
