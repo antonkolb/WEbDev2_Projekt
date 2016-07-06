@@ -18,4 +18,3 @@ chmod 777 frontend/runtime
 
 alias cept="vendor/bin/codecept"
 
-)
