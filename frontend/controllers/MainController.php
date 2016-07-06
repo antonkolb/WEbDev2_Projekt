@@ -26,7 +26,14 @@ class MainController extends AbstractController{
                 $statistic->makeStatistic();
 		return 'String';
 	}
-	
+	public function actionTeste(){
+		$id = '2';
+        
+        
+        test = new TestController($id,$gameKat,$game,$userAnswere,$amoutOfTries,$elapsedTime);
+                $statistic->makeStatistic();
+		return 'String';
+	}
 	
 	public function actionIndex(){
 		return $this->render('index');
