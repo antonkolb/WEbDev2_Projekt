@@ -30,7 +30,7 @@ class MainController extends AbstractController{
 		$id = '2';
         
         
-        test = new TestController($id,$gameKat,$game,$userAnswere,$amoutOfTries,$elapsedTime);
+        $test = new TestController($id,$gameKat,$game,$userAnswere,$amoutOfTries,$elapsedTime);
                 $statistic->makeStatistic();
 		return 'String';
 	}
