@@ -1,0 +1,252 @@
+Codeception PHP Testing Framework v2.2.2
+Powered by PHPUnit 4.8.26 by Sebastian Bergmann and contributors.
+
+[1mFunctional Tests (0) [22m----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[1mAcceptance Tests (8) [22m----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[35;1mGame17_1Cept:[39;22m Submit no answers
+Signature: [32mGame17_1Cept[39m
+Test: [32mtests/acceptance/Game17_1Cept.php[39m
+[33mScenario --[39m
+[1m [22mAs an user
+[1m [22mI am going to to login and select game 1 on the main page
+[1m I [22mam on page "/"
+[1m I [22mfill field "LoginForm[username]","Frodo Beutlin"
+[1m I [22mfill field "LoginForm[password]","123456"
+[1m I [22mclick "login-button"
+[1m [22mI expect to be on the main page
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[1m I [22mclick "Spiel 1"
+[1m [22mI expect to be in game 1
+[1m I [22msee "Einfache Rechenaufgaben"
+[1m I [22mclick "Korrigieren"
+[1m [22mI expect an error message
+[1m I [22msee "User Answer cannot be blank."
+[1m I [22mgrab multiple ".aufgabenstellung span"
+[1m I [22mfill field "Game17_1[userAnswer][1]","NotANumber"
+[1m I [22mfill field "Game17_1[userAnswer][2]","NotANumber"
+[1m I [22mfill field "Game17_1[userAnswer][3]","NotANumber"
+[1m I [22mfill field "Game17_1[userAnswer][4]","NotANumber"
+[1m I [22mclick "Korrigieren"
+[1m [22mI expect an error message
+[1m I [22msee "User Answer must be an integer."
+[1m I [22mgrab multiple ".aufgabenstellung span"
+[1m I [22mfill field "Game17_1[userAnswer][1]",-2
+[1m I [22mfill field "Game17_1[userAnswer][2]",2
+[1m I [22mfill field "Game17_1[userAnswer][3]",-4
+[1m I [22mfill field "Game17_1[userAnswer][4]",5
+[1m I [22mclick "Korrigieren"
+[1m [22mI expect check site with results
+[1m I [22msee "Aufgabe 1 inkorrekt. Richtige Antwort: 10 Deine Antwort: -2Aufgabe 2 inkorrekt. Richtige Antwort: 8 Deine Antwort: 2Aufgabe 3 inkorrekt. Richtige Antwort: 10 Deine Antwort: -4Aufgabe 4 inkorrek..."
+[1m [22mI am going to to go direct to game 1
+[1m I [22mam on page "/frontend/web/main/game17_1"
+[1m [22mI expect to be in game 1
+[1m I [22msee "Einfache Rechenaufgaben"
+[1m I [22mgrab multiple ".aufgabenstellung span"
+[1m I [22mfill field "Game17_1[userAnswer][1]",7
+[1m I [22mfill field "Game17_1[userAnswer][2]",6
+[1m I [22mfill field "Game17_1[userAnswer][3]",9
+[1m I [22mfill field "Game17_1[userAnswer][4]",9
+[1m I [22mclick "Korrigieren"
+[1m [22mI expect check site with results
+[1m I [22msee "Aufgabe 1 korrekt. Richtige Antwort: 7 Deine Antwort: 7Aufgabe 2 korrekt. Richtige Antwort: 6 Deine Antwort: 6Aufgabe 3 korrekt. Richtige Antwort: 9 Deine Antwort: 9Aufgabe 4 korrekt. Richtige ..."
+[32;1m PASSED [39;22m
+
+[35;1mGame17_2Cept:[39;22m Submit no answers
+Signature: [32mGame17_2Cept[39m
+Test: [32mtests/acceptance/Game17_2Cept.php[39m
+[33mScenario --[39m
+[1m [22mAs an user
+[1m [22mI am going to to login and select game 2 on the main page
+[1m I [22mam on page "/"
+[1m I [22mfill field "LoginForm[username]","Frodo Beutlin"
+[1m I [22mfill field "LoginForm[password]","123456"
+[1m I [22mclick "login-button"
+[1m [22mI expect to be on the main page
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[1m I [22mclick "Spiel 2"
+[1m [22mI expect to be in game 2
+[1m I [22msee "Textaufgaben"
+[1m I [22mclick "Korrigieren"
+[1m [22mI expect an error message
+[1m I [22msee "User Answers cannot be blank."
+[1m I [22mgrab multiple ".aufgabenstellung span"
+[1m I [22mfill field "Game17_2[userAnswers][0]","NotANumber"
+[1m I [22mfill field "Game17_2[userAnswers][1]","NotANumber"
+[1m I [22mfill field "Game17_2[userAnswers][2]","NotANumber"
+[1m I [22mclick "Korrigieren"
+[1m [22mI expect an error message
+[1m I [22msee "User Answers must be an integer."
+[1m I [22mgrab multiple ".aufgabenstellung span"
+[1m I [22mfill field "Game17_2[userAnswers][0]",2
+[1m I [22mfill field "Game17_2[userAnswers][1]",8
+[1m I [22mfill field "Game17_2[userAnswers][2]",-3
+[1m I [22mclick "Korrigieren"
+[1m [22mI expect check site with results
+[1m I [22msee "Nicht richtig: Peter hat dann 6 Smartphone[s], nicht 2.Nicht richtig: Peter hat dann 10 Smartphone[s], nicht 8.Nicht richtig: Peter hat dann 7 Smartphone[s], nicht -3."
+[1m [22mI am going to to go direct to game 2
+[1m I [22mam on page "/frontend/web/main/game17_2"
+[1m [22mI expect to be in game 2
+[1m I [22msee "Textaufgaben"
+[1m I [22mgrab multiple ".aufgabenstellung span"
+[1m I [22mfill field "Game17_2[userAnswers][0]",6
+[1m I [22mfill field "Game17_2[userAnswers][1]",10
+[1m I [22mfill field "Game17_2[userAnswers][2]",10
+[1m I [22mclick "Korrigieren"
+[1m [22mI expect check site with results
+[1m I [22msee "Richtig! Peter hat dann 6 Smartphone[s].Richtig! Peter hat dann 10 Smartphone[s].Richtig! Peter hat dann 10 Smartphone[s]."
+[32;1m PASSED [39;22m
+
+[35;1mGame17_3Cept:[39;22m Submit no answers
+Signature: [32mGame17_3Cept[39m
+Test: [32mtests/acceptance/Game17_3Cept.php[39m
+[33mScenario --[39m
+[1m [22mAs an user
+[1m [22mI am going to to login and select game 3 on the main page
+[1m I [22mam on page "/"
+[1m I [22mfill field "LoginForm[username]","Frodo Beutlin"
+[1m I [22mfill field "LoginForm[password]","123456"
+[1m I [22mclick "login-button"
+[1m [22mI expect to be on the main page
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[1m I [22mclick "Spiel 3"
+[1m [22mI expect to be in game 3
+[1m I [22msee "Zahlenmauern"
+[1m I [22mclick "Korrigieren"
+[1m [22mI expect an error message
+[1m I [22msee "User Answers cannot be blank."
+[32;1m PASSED [39;22m
+
+[35;1mGame17_4Cept:[39;22m Submit no answers
+Signature: [32mGame17_4Cept[39m
+Test: [32mtests/acceptance/Game17_4Cept.php[39m
+[33mScenario --[39m
+[1m [22mAs an user
+[1m [22mI am going to to login and select game 4 on the main page
+[1m I [22mam on page "/"
+[1m I [22mfill field "LoginForm[username]","Frodo Beutlin"
+[1m I [22mfill field "LoginForm[password]","123456"
+[1m I [22mclick "login-button"
+[1m [22mI expect to be on the main page
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[1m I [22mclick "Spiel 4"
+[1m [22mI expect to be in game 4
+[1m I [22msee "Zahlenreihen"
+[1m I [22mclick "Korrigieren"
+[1m [22mI expect an error message
+[1m I [22msee "User Answers cannot be blank."
+[32;1m PASSED [39;22m
+
+[35;1mMainPageCept:[39;22m To login and see the main page
+Signature: [32mMainPageCept[39m
+Test: [32mtests/acceptance/MainPageCept.php[39m
+[33mScenario --[39m
+[1m I [22mam on page "/"
+[1m I [22mfill field "LoginForm[username]","Frodo Beutlin"
+[1m I [22mfill field "LoginForm[password]","123456"
+[1m I [22mclick "login-button"
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[1m I [22mclick "Spiel 1"
+[1m I [22msee "Einfache Rechenaufgaben"
+[1m I [22mclick "Rechnen und Denken"
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[1m I [22mclick "Spiel 2"
+[1m I [22msee "Textaufgaben"
+[1m I [22mclick "Rechnen und Denken"
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[1m I [22mclick "Spiel 3"
+[1m I [22msee "Zahlenmauern"
+[1m I [22mclick "Rechnen und Denken"
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[1m I [22mclick "Spiel 4"
+[1m I [22msee "Zahlenreihen"
+[1m I [22mclick "Rechnen und Denken"
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[1m I [22mclick "Spiel 1"
+[1m I [22msee "Einfache Rechenaufgaben"
+[1m I [22mclick "button[name="back"]"
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[1m I [22mclick "Spiel 2"
+[1m I [22msee "Textaufgaben"
+[1m I [22mclick "back"
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[1m I [22mclick "Spiel 3"
+[1m I [22msee "Zahlenmauern"
+[1m I [22mclick "back"
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[1m I [22mclick "Spiel 4"
+[1m I [22msee "Zahlenreihen"
+[1m I [22mclick "back"
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[32;1m PASSED [39;22m
+
+[35;1mReqTestCept:[39;22m Check if all requirements are met
+Signature: [32mReqTestCept[39m
+Test: [32mtests/acceptance/ReqTestCept.php[39m
+[33mScenario --[39m
+[1m I [22mam on page "/frontend/web/requirements.php"
+[1m I [22msee "Congratulations! Your server configuration satisfies all requirements."
+[32;1m PASSED [39;22m
+
+[35;1mSignInCept:[39;22m Go to Login form
+Signature: [32mSignInCept[39m
+Test: [32mtests/acceptance/SignInCept.php[39m
+[33mScenario --[39m
+[1m I [22mam on page "/"
+[1m I [22msee "Please fill out the following fields to login:"
+[1m I [22mfill field "LoginForm[username]","test"
+[1m I [22mfill field "LoginForm[password]","1234"
+[1m I [22mclick "login-button"
+[1m I [22msee "Incorrect username or password."
+[1m I [22mclick "login-button"
+[1m I [22msee "Username cannot be blank."
+[1m I [22msee "Password cannot be blank."
+[1m I [22mfill field "LoginForm[username]","Frodo Beutlin"
+[1m I [22mfill field "LoginForm[password]","123456"
+[1m I [22mclick "login-button"
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[1m I [22mclick "Logout (Frodo Beutlin)",".wrap"
+[1m I [22msee "Please fill out the following fields to login:"
+[32;1m PASSED [39;22m
+
+[35;1mSignUpCept:[39;22m Go to Sign Up form
+Signature: [32mSignUpCept[39m
+Test: [32mtests/acceptance/SignUpCept.php[39m
+[33mScenario --[39m
+[1m I [22mam on page "/"
+[1m I [22msee "Please fill out the following fields to login:"
+[1m I [22mclick "Signup",".wrap"
+[1m I [22msee "Please fill out the following fields to signup:"
+[1m I [22mfill field "SignupForm[username]","test"
+[1m I [22mfill field "SignupForm[email]","abcd"
+[1m I [22mfill field "SignupForm[password]","1234"
+[1m I [22mclick "signup-button"
+[1m I [22msee "Email is not a valid email address."
+[1m I [22msee "Password should contain at least 6 characters."
+[1m I [22mfill field "SignupForm[username]","Samweis Gamdschie"
+[1m I [22mfill field "SignupForm[email]","frodo@hobbiton.me"
+[1m I [22mfill field "SignupForm[password]","123456"
+[1m I [22mclick "signup-button"
+[1m I [22msee "This email address has already been taken."
+[1m I [22mfill field "SignupForm[username]","Frodo Beutlin"
+[1m I [22mfill field "SignupForm[email]","sam@hobbiton.me"
+[1m I [22mfill field "SignupForm[password]","123456"
+[1m I [22mclick "signup-button"
+[1m I [22msee "This username has already been taken."
+[1m I [22mfill field "SignupForm[username]","User862"
+[1m I [22mfill field "SignupForm[email]","user862@email.com"
+[1m I [22mfill field "SignupForm[password]","123456"
+[1m I [22mclick "signup-button"
+[1m I [22msee "Wähle eine Aufgabe aus!"
+[32;1m PASSED [39;22m
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[1mUnit Tests (0) [22m----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Time: 7.89 seconds, Memory: 14.00MB
+
+[30;42mOK (8 tests, 51 assertions)[0m
