@@ -1,9 +1,24 @@
-Abgabe
-Anmelden
-mkdir studienarbeit 
-git clone http://gittlab.hof-university.de/wd-team-17/WebDev2_Projekt.git studienarbeit //clont in ordner Studienarbeit
-cd studienarbeit
-export PATH="$PATH:." //. =dieser Ordner
-./install.sh  //Datie kein Befehl //führt yii Migration aus
-alias cept="vendor/bin/codecept" //variable für vendorordner
+Für die Abgabe
+
+/**
+ * Allgemeine Vorbereitung + DB Einstellungen
+ */
+Anmelden bzw. zum home folder navigieren (eventuell unnötig da alles vorbereitet vom Prof)
+mkdir studienarbeit //erstellt einen Ordner namens "studienarbeit"
+git clone http://gittlab.hof-university.de/wd-team-17/WebDev2_Projekt.git studienarbeit //clont in ordner studienarbeit
+cd studienarbeit/common/config/ //wechsel in das Verzeichnis
+vim main-local.php //Datei öffnen; nano oder vi gehen auch
+//gegebenfalls dbname, username, password anpassen
+
+/**
+ * Install Skript ausführen
+ */
+cd ../.. //zurück in den root Ordner des Projekts
+export PATH="$PATH:." //Path Variable setzen; . = dieser Ordner; notwendig um Skript auszuführen
+./install.sh  //Datei, kein Befehl; führt u.a. yii Migration aus
+
+/**
+ * Codeception benutzen
+ */
+alias cept="vendor/bin/codecept" //Befehl bereits im Skript, muss aber wegen unbekannten Gründen eventuell nochmal ausgeführt werden; setzt variable für codeception
 cept run acceptance // führt alle acceptance Tests aus
