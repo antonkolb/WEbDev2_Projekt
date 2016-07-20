@@ -5,7 +5,7 @@ Für die Abgabe
  */
 Anmelden bzw. zum home folder navigieren (eventuell unnötig da alles vorbereitet vom Prof)
 mkdir studienarbeit //erstellt einen Ordner namens "studienarbeit"
-git clone http://gittlab.hof-university.de/wd-team-17/WebDev2_Projekt.git studienarbeit //clont in ordner studienarbeit
+git clone http://gitlab.hof-university.de/wd-team-17/WebDev2_Projekt.git studienarbeit //clont in ordner studienarbeit
 cd studienarbeit/common/config/ //wechsel in das Verzeichnis
 vim main-local.php //Datei öffnen; nano oder vi gehen auch
 //gegebenfalls dbname, username, password anpassen
@@ -20,5 +20,6 @@ export PATH="$PATH:." //Path Variable setzen; . = dieser Ordner; notwendig um Sk
 /**
  * Codeception benutzen
  */
+vim tests/acceptance.suite.yml //url: 'http://wd2-exam-17-frontend.lx-lehre.hof-university.de/'
 alias cept="vendor/bin/codecept" //Befehl bereits im Skript, muss aber wegen unbekannten Gründen eventuell nochmal ausgeführt werden; setzt variable für codeception
 cept run acceptance // führt alle acceptance Tests aus
